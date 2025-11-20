@@ -1,0 +1,648 @@
+[Chromatik 2025/10/26 11:15:30] Starting Chromatik version 1.1.0
+[Chromatik 2025/10/26 11:15:30] Running java 21.0.6 Eclipse Adoptium Mac OS X 14.5 aarch64
+[Chromatik 2025/10/26 11:15:30] Licensed to Ben Rotter <benjrotter@gmail.com> - version 1.0.0 FREE - heronarts.lx.core
+[GLX 2025/10/26 11:15:31] GLX monitorWorkarea: size(1470x918), pos(x:0,y:38)
+[GLX 2025/10/26 11:15:31] GLX createWindow: 1470x918
+[GLX 2025/10/26 11:15:31] GLX systemContentScale: 2.0x2.0
+[GLX 2025/10/26 11:15:31] GLX windowSize: 1470x890
+[GLX 2025/10/26 11:15:31] GLX setWindowPos: 0,38
+[GLX 2025/10/26 11:15:31] GLX framebufferSize: 2940x1780
+[GLX 2025/10/26 11:15:31] GLX uiSize: 2534.483x1534.4828
+[GLX 2025/10/26 11:15:31] GLX cursorScale: 1.724138x1.724138
+[GLX 2025/10/26 11:15:33] Using BGFX renderer: Metal
+[GLX 2025/10/26 11:15:34] Starting LX Engine...
+[LX 2025/10/26 11:15:34] LXEngine.ExecutorService starting...
+[GLX 2025/10/26 11:15:34] Bootstrap complete, running main loop.
+[LX 2025/10/26 11:15:34] Opening project file: /Users/ben/Chromatik/Projects/Blinkydome2025_wiskers.lxp
+[LX 2025/10/26 11:15:34] Started audio input thread: Default Audio Device
+[LX 2025/10/26 11:15:34] Invalid view in snapshot: {"scope":"MODULATION","type":"PARAMETER","enabled":true,"parameterPath":"/lx/modulation/modulator/1/midiSource/name","normalizedValue":0.0}
+java.lang.NullPointerException: Cannot invoke "com.google.gson.JsonElement.getAsString()" because "value" is null
+	at heronarts.lx.snapshot.LXSnapshot$ParameterView.<init>(LXSnapshot.java:267)
+	at heronarts.lx.snapshot.LXSnapshot.addView(LXSnapshot.java:698)
+	at heronarts.lx.snapshot.LXSnapshot.load(LXSnapshot.java:789)
+	at heronarts.lx.snapshot.LXSnapshotEngine.load(LXSnapshotEngine.java:770)
+	at heronarts.lx.LXComponent.load(LXComponent.java:1490)
+	at heronarts.lx.LXEngine.load(LXEngine.java:1482)
+	at heronarts.lx.LX._openProject(LX.java:1196)
+	at heronarts.lx.LX.openProject(LX.java:1175)
+	at heronarts.lx.LX.openProject(LX.java:1110)
+	at heronarts.lx.LXPreferences.loadInitialProject(LXPreferences.java:338)
+	at heronarts.lx.studio.Chromatik.lambda$main$0(Chromatik.java:340)
+	at heronarts.lx.LXEngine._run(LXEngine.java:1162)
+	at heronarts.lx.LXEngine.run(LXEngine.java:1062)
+	at heronarts.lx.LXEngine$ExecutorService.runLoop(LXEngine.java:727)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+[LX 2025/10/26 11:15:34] Invalid view in snapshot: {"scope":"MODULATION","type":"PARAMETER","enabled":true,"parameterPath":"/lx/modulation/modulator/2/midiSource/name","normalizedValue":0.0}
+java.lang.NullPointerException: Cannot invoke "com.google.gson.JsonElement.getAsString()" because "value" is null
+	at heronarts.lx.snapshot.LXSnapshot$ParameterView.<init>(LXSnapshot.java:267)
+	at heronarts.lx.snapshot.LXSnapshot.addView(LXSnapshot.java:698)
+	at heronarts.lx.snapshot.LXSnapshot.load(LXSnapshot.java:789)
+	at heronarts.lx.snapshot.LXSnapshotEngine.load(LXSnapshotEngine.java:770)
+	at heronarts.lx.LXComponent.load(LXComponent.java:1490)
+	at heronarts.lx.LXEngine.load(LXEngine.java:1482)
+	at heronarts.lx.LX._openProject(LX.java:1196)
+	at heronarts.lx.LX.openProject(LX.java:1175)
+	at heronarts.lx.LX.openProject(LX.java:1110)
+	at heronarts.lx.LXPreferences.loadInitialProject(LXPreferences.java:338)
+	at heronarts.lx.studio.Chromatik.lambda$main$0(Chromatik.java:340)
+	at heronarts.lx.LXEngine._run(LXEngine.java:1162)
+	at heronarts.lx.LXEngine.run(LXEngine.java:1062)
+	at heronarts.lx.LXEngine$ExecutorService.runLoop(LXEngine.java:727)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+[LX 2025/10/26 11:15:34] Invalid view in snapshot: {"scope":"MODULATION","type":"PARAMETER","enabled":true,"parameterPath":"/lx/modulation/modulator/3/midiSource/name","normalizedValue":0.0}
+java.lang.NullPointerException: Cannot invoke "com.google.gson.JsonElement.getAsString()" because "value" is null
+	at heronarts.lx.snapshot.LXSnapshot$ParameterView.<init>(LXSnapshot.java:267)
+	at heronarts.lx.snapshot.LXSnapshot.addView(LXSnapshot.java:698)
+	at heronarts.lx.snapshot.LXSnapshot.load(LXSnapshot.java:789)
+	at heronarts.lx.snapshot.LXSnapshotEngine.load(LXSnapshotEngine.java:770)
+	at heronarts.lx.LXComponent.load(LXComponent.java:1490)
+	at heronarts.lx.LXEngine.load(LXEngine.java:1482)
+	at heronarts.lx.LX._openProject(LX.java:1196)
+	at heronarts.lx.LX.openProject(LX.java:1175)
+	at heronarts.lx.LX.openProject(LX.java:1110)
+	at heronarts.lx.LXPreferences.loadInitialProject(LXPreferences.java:338)
+	at heronarts.lx.studio.Chromatik.lambda$main$0(Chromatik.java:340)
+	at heronarts.lx.LXEngine._run(LXEngine.java:1162)
+	at heronarts.lx.LXEngine.run(LXEngine.java:1062)
+	at heronarts.lx.LXEngine$ExecutorService.runLoop(LXEngine.java:727)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+[LX 2025/10/26 11:15:34] Invalid view in snapshot: {"scope":"MODULATION","type":"PARAMETER","enabled":true,"parameterPath":"/lx/modulation/modulator/4/midiSource/name","normalizedValue":0.0}
+java.lang.NullPointerException: Cannot invoke "com.google.gson.JsonElement.getAsString()" because "value" is null
+	at heronarts.lx.snapshot.LXSnapshot$ParameterView.<init>(LXSnapshot.java:267)
+	at heronarts.lx.snapshot.LXSnapshot.addView(LXSnapshot.java:698)
+	at heronarts.lx.snapshot.LXSnapshot.load(LXSnapshot.java:789)
+	at heronarts.lx.snapshot.LXSnapshotEngine.load(LXSnapshotEngine.java:770)
+	at heronarts.lx.LXComponent.load(LXComponent.java:1490)
+	at heronarts.lx.LXEngine.load(LXEngine.java:1482)
+	at heronarts.lx.LX._openProject(LX.java:1196)
+	at heronarts.lx.LX.openProject(LX.java:1175)
+	at heronarts.lx.LX.openProject(LX.java:1110)
+	at heronarts.lx.LXPreferences.loadInitialProject(LXPreferences.java:338)
+	at heronarts.lx.studio.Chromatik.lambda$main$0(Chromatik.java:340)
+	at heronarts.lx.LXEngine._run(LXEngine.java:1162)
+	at heronarts.lx.LXEngine.run(LXEngine.java:1062)
+	at heronarts.lx.LXEngine$ExecutorService.runLoop(LXEngine.java:727)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+[LX 2025/10/26 11:15:34] Invalid view in snapshot: {"scope":"MODULATION","type":"PARAMETER","enabled":true,"parameterPath":"/lx/modulation/modulator/5/midiSource/name","normalizedValue":0.0}
+java.lang.NullPointerException: Cannot invoke "com.google.gson.JsonElement.getAsString()" because "value" is null
+	at heronarts.lx.snapshot.LXSnapshot$ParameterView.<init>(LXSnapshot.java:267)
+	at heronarts.lx.snapshot.LXSnapshot.addView(LXSnapshot.java:698)
+	at heronarts.lx.snapshot.LXSnapshot.load(LXSnapshot.java:789)
+	at heronarts.lx.snapshot.LXSnapshotEngine.load(LXSnapshotEngine.java:770)
+	at heronarts.lx.LXComponent.load(LXComponent.java:1490)
+	at heronarts.lx.LXEngine.load(LXEngine.java:1482)
+	at heronarts.lx.LX._openProject(LX.java:1196)
+	at heronarts.lx.LX.openProject(LX.java:1175)
+	at heronarts.lx.LX.openProject(LX.java:1110)
+	at heronarts.lx.LXPreferences.loadInitialProject(LXPreferences.java:338)
+	at heronarts.lx.studio.Chromatik.lambda$main$0(Chromatik.java:340)
+	at heronarts.lx.LXEngine._run(LXEngine.java:1162)
+	at heronarts.lx.LXEngine.run(LXEngine.java:1062)
+	at heronarts.lx.LXEngine$ExecutorService.runLoop(LXEngine.java:727)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+[LX 2025/10/26 11:15:34] Invalid view in snapshot: {"scope":"MODULATION","type":"PARAMETER","enabled":true,"parameterPath":"/lx/modulation/modulator/6/midiSource/name","normalizedValue":0.0}
+java.lang.NullPointerException: Cannot invoke "com.google.gson.JsonElement.getAsString()" because "value" is null
+	at heronarts.lx.snapshot.LXSnapshot$ParameterView.<init>(LXSnapshot.java:267)
+	at heronarts.lx.snapshot.LXSnapshot.addView(LXSnapshot.java:698)
+	at heronarts.lx.snapshot.LXSnapshot.load(LXSnapshot.java:789)
+	at heronarts.lx.snapshot.LXSnapshotEngine.load(LXSnapshotEngine.java:770)
+	at heronarts.lx.LXComponent.load(LXComponent.java:1490)
+	at heronarts.lx.LXEngine.load(LXEngine.java:1482)
+	at heronarts.lx.LX._openProject(LX.java:1196)
+	at heronarts.lx.LX.openProject(LX.java:1175)
+	at heronarts.lx.LX.openProject(LX.java:1110)
+	at heronarts.lx.LXPreferences.loadInitialProject(LXPreferences.java:338)
+	at heronarts.lx.studio.Chromatik.lambda$main$0(Chromatik.java:340)
+	at heronarts.lx.LXEngine._run(LXEngine.java:1162)
+	at heronarts.lx.LXEngine.run(LXEngine.java:1062)
+	at heronarts.lx.LXEngine$ExecutorService.runLoop(LXEngine.java:727)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+[LX 2025/10/26 11:15:34] Invalid view in snapshot: {"scope":"MODULATION","type":"PARAMETER","enabled":true,"parameterPath":"/lx/modulation/modulator/7/midiSource/name","normalizedValue":0.0}
+java.lang.NullPointerException: Cannot invoke "com.google.gson.JsonElement.getAsString()" because "value" is null
+	at heronarts.lx.snapshot.LXSnapshot$ParameterView.<init>(LXSnapshot.java:267)
+	at heronarts.lx.snapshot.LXSnapshot.addView(LXSnapshot.java:698)
+	at heronarts.lx.snapshot.LXSnapshot.load(LXSnapshot.java:789)
+	at heronarts.lx.snapshot.LXSnapshotEngine.load(LXSnapshotEngine.java:770)
+	at heronarts.lx.LXComponent.load(LXComponent.java:1490)
+	at heronarts.lx.LXEngine.load(LXEngine.java:1482)
+	at heronarts.lx.LX._openProject(LX.java:1196)
+	at heronarts.lx.LX.openProject(LX.java:1175)
+	at heronarts.lx.LX.openProject(LX.java:1110)
+	at heronarts.lx.LXPreferences.loadInitialProject(LXPreferences.java:338)
+	at heronarts.lx.studio.Chromatik.lambda$main$0(Chromatik.java:340)
+	at heronarts.lx.LXEngine._run(LXEngine.java:1162)
+	at heronarts.lx.LXEngine.run(LXEngine.java:1062)
+	at heronarts.lx.LXEngine$ExecutorService.runLoop(LXEngine.java:727)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+[LX 2025/10/26 11:15:34] Project loaded successfully from /Users/ben/Chromatik/Projects/Blinkydome2025_wiskers.lxp
+[LX 2025/10/26 11:15:34] [I/O] Network output is disabled due to license restrictions.
+[LX 2025/10/26 15:48:35] Project saved successfully to /Users/ben/Chromatik/Projects/Blinkydome2025_wiskers.lxp
+[LX 2025/10/31 14:04:55] Finished audio input thread: Default Audio Device
+[LX 2025/10/31 14:04:55] Started audio input thread: VB-Cable
+[LX 2025/10/31 14:12:10] Project saved successfully to /Users/ben/Chromatik/Projects/Blinkydome2025_wiskers.lxp
+[LX 2025/10/31 14:16:57] Project saved successfully to /Users/ben/Chromatik/Projects/Blinkydome2025_wiskers.lxp
+[LX 2025/10/31 14:25:35] Error invoking Javascript function heronarts.lx.parameter.StringParameter@77689294/dispose: Cannot invoke "javax.script.Invocable.invokeFunction(String, Object[])" because "this.invocable" is null
+[LX 2025/10/31 14:39:56] Project saved successfully to /Users/ben/Chromatik/Projects/Blinkydome2025_wiskers.lxp
+[LX 2025/10/31 14:41:42] Project saved successfully to /Users/ben/Chromatik/Projects/Blinkydome2025_wiskers.lxp
+[LX 2025/10/31 14:48:15] Project saved successfully to /Users/ben/Chromatik/Projects/Blinkydome2025_wiskers.lxp
+[LX 2025/10/31 19:54:38] Project saved successfully to /Users/ben/Chromatik/Projects/Blinkydome2025_wiskers.lxp
+[LX 2025/11/01 00:34:36] Bad internal state, component 136285 of type heronarts.lx.structure.StripFixture does not exist, cannot get parameter: x
+[LX 2025/11/01 00:34:36] FATAL ERROR IN LXEngine.processInputEvents(): Cannot invoke "heronarts.lx.parameter.LXParameter.setValue(double)" because the return value of "heronarts.lx.command.LXCommand$ParameterReference.get()" is null
+java.lang.NullPointerException: Cannot invoke "heronarts.lx.parameter.LXParameter.setValue(double)" because the return value of "heronarts.lx.command.LXCommand$ParameterReference.get()" is null
+	at heronarts.lx.command.LXCommand$Parameter$SetValue.perform(LXCommand.java:454)
+	at heronarts.lx.command.LXCommand$Structure$ModifyFixturePositions.update(LXCommand.java:2745)
+	at heronarts.lx.structure.LXStructure.translateSelectedFixtures(LXStructure.java:514)
+	at heronarts.lx.studio.ui.preview.UIPreviewWindow$2.translate(UIPreviewWindow.java:315)
+	at heronarts.glx.ui.UI3dContext.onMouseDragged(UI3dContext.java:947)
+	at heronarts.glx.ui.UIObject.mouseDragged(UIObject.java:746)
+	at heronarts.glx.ui.UIObject.mouseDragged(UIObject.java:737)
+	at heronarts.glx.ui.UI.mouseEvent(UI.java:1105)
+	at heronarts.glx.InputDispatch.dispatch(InputDispatch.java:273)
+	at heronarts.lx.LXEngine._processInputEvents(LXEngine.java:1096)
+	at heronarts.lx.LXEngine.processInputEvents(LXEngine.java:1072)
+	at heronarts.lx.LXEngine.access$0(LXEngine.java:1070)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+[LX 2025/11/01 00:34:36] Bad internal state, component 136285 of type heronarts.lx.structure.StripFixture does not exist, cannot get parameter: x
+[LX 2025/11/01 00:34:36] FATAL ERROR IN LXEngine.processInputEvents(): Cannot invoke "heronarts.lx.parameter.LXParameter.setValue(double)" because the return value of "heronarts.lx.command.LXCommand$ParameterReference.get()" is null
+java.lang.NullPointerException: Cannot invoke "heronarts.lx.parameter.LXParameter.setValue(double)" because the return value of "heronarts.lx.command.LXCommand$ParameterReference.get()" is null
+	at heronarts.lx.command.LXCommand$Parameter$SetValue.perform(LXCommand.java:454)
+	at heronarts.lx.command.LXCommand$Structure$ModifyFixturePositions.update(LXCommand.java:2745)
+	at heronarts.lx.structure.LXStructure.translateSelectedFixtures(LXStructure.java:514)
+	at heronarts.lx.studio.ui.preview.UIPreviewWindow$2.translate(UIPreviewWindow.java:315)
+	at heronarts.glx.ui.UI3dContext.onMouseDragged(UI3dContext.java:947)
+	at heronarts.glx.ui.UIObject.mouseDragged(UIObject.java:746)
+	at heronarts.glx.ui.UIObject.mouseDragged(UIObject.java:737)
+	at heronarts.glx.ui.UI.mouseEvent(UI.java:1105)
+	at heronarts.glx.InputDispatch.dispatch(InputDispatch.java:273)
+	at heronarts.lx.LXEngine._processInputEvents(LXEngine.java:1096)
+	at heronarts.lx.LXEngine.processInputEvents(LXEngine.java:1072)
+	at heronarts.lx.LXEngine.access$0(LXEngine.java:1070)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+[LX 2025/11/01 00:34:36] Bad internal state, component 136285 of type heronarts.lx.structure.StripFixture does not exist, cannot get parameter: x
+[LX 2025/11/01 00:34:36] FATAL ERROR IN LXEngine.processInputEvents(): Cannot invoke "heronarts.lx.parameter.LXParameter.setValue(double)" because the return value of "heronarts.lx.command.LXCommand$ParameterReference.get()" is null
+java.lang.NullPointerException: Cannot invoke "heronarts.lx.parameter.LXParameter.setValue(double)" because the return value of "heronarts.lx.command.LXCommand$ParameterReference.get()" is null
+	at heronarts.lx.command.LXCommand$Parameter$SetValue.perform(LXCommand.java:454)
+	at heronarts.lx.command.LXCommand$Structure$ModifyFixturePositions.update(LXCommand.java:2745)
+	at heronarts.lx.structure.LXStructure.translateSelectedFixtures(LXStructure.java:514)
+	at heronarts.lx.studio.ui.preview.UIPreviewWindow$2.translate(UIPreviewWindow.java:315)
+	at heronarts.glx.ui.UI3dContext.onMouseDragged(UI3dContext.java:947)
+	at heronarts.glx.ui.UIObject.mouseDragged(UIObject.java:746)
+	at heronarts.glx.ui.UIObject.mouseDragged(UIObject.java:737)
+	at heronarts.glx.ui.UI.mouseEvent(UI.java:1105)
+	at heronarts.glx.InputDispatch.dispatch(InputDispatch.java:273)
+	at heronarts.lx.LXEngine._processInputEvents(LXEngine.java:1096)
+	at heronarts.lx.LXEngine.processInputEvents(LXEngine.java:1072)
+	at heronarts.lx.LXEngine.access$0(LXEngine.java:1070)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+[LX 2025/11/01 00:34:36] Bad internal state, component 136285 of type heronarts.lx.structure.StripFixture does not exist, cannot get parameter: x
+[LX 2025/11/01 00:34:36] FATAL ERROR IN LXEngine.processInputEvents(): Cannot invoke "heronarts.lx.parameter.LXParameter.setValue(double)" because the return value of "heronarts.lx.command.LXCommand$ParameterReference.get()" is null
+java.lang.NullPointerException: Cannot invoke "heronarts.lx.parameter.LXParameter.setValue(double)" because the return value of "heronarts.lx.command.LXCommand$ParameterReference.get()" is null
+	at heronarts.lx.command.LXCommand$Parameter$SetValue.perform(LXCommand.java:454)
+	at heronarts.lx.command.LXCommand$Structure$ModifyFixturePositions.update(LXCommand.java:2745)
+	at heronarts.lx.structure.LXStructure.translateSelectedFixtures(LXStructure.java:514)
+	at heronarts.lx.studio.ui.preview.UIPreviewWindow$2.translate(UIPreviewWindow.java:315)
+	at heronarts.glx.ui.UI3dContext.onMouseDragged(UI3dContext.java:947)
+	at heronarts.glx.ui.UIObject.mouseDragged(UIObject.java:746)
+	at heronarts.glx.ui.UIObject.mouseDragged(UIObject.java:737)
+	at heronarts.glx.ui.UI.mouseEvent(UI.java:1105)
+	at heronarts.glx.InputDispatch.dispatch(InputDispatch.java:273)
+	at heronarts.lx.LXEngine._processInputEvents(LXEngine.java:1096)
+	at heronarts.lx.LXEngine.processInputEvents(LXEngine.java:1072)
+	at heronarts.lx.LXEngine.access$0(LXEngine.java:1070)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+[LX 2025/11/01 00:34:36] Bad internal state, component 136285 of type heronarts.lx.structure.StripFixture does not exist, cannot get parameter: x
+[LX 2025/11/01 00:34:36] FATAL ERROR IN LXEngine.processInputEvents(): Cannot invoke "heronarts.lx.parameter.LXParameter.setValue(double)" because the return value of "heronarts.lx.command.LXCommand$ParameterReference.get()" is null
+java.lang.NullPointerException: Cannot invoke "heronarts.lx.parameter.LXParameter.setValue(double)" because the return value of "heronarts.lx.command.LXCommand$ParameterReference.get()" is null
+	at heronarts.lx.command.LXCommand$Parameter$SetValue.perform(LXCommand.java:454)
+	at heronarts.lx.command.LXCommand$Structure$ModifyFixturePositions.update(LXCommand.java:2745)
+	at heronarts.lx.structure.LXStructure.translateSelectedFixtures(LXStructure.java:514)
+	at heronarts.lx.studio.ui.preview.UIPreviewWindow$2.translate(UIPreviewWindow.java:315)
+	at heronarts.glx.ui.UI3dContext.onMouseDragged(UI3dContext.java:947)
+	at heronarts.glx.ui.UIObject.mouseDragged(UIObject.java:746)
+	at heronarts.glx.ui.UIObject.mouseDragged(UIObject.java:737)
+	at heronarts.glx.ui.UI.mouseEvent(UI.java:1105)
+	at heronarts.glx.InputDispatch.dispatch(InputDispatch.java:273)
+	at heronarts.lx.LXEngine._processInputEvents(LXEngine.java:1096)
+	at heronarts.lx.LXEngine.processInputEvents(LXEngine.java:1072)
+	at heronarts.lx.LXEngine.access$0(LXEngine.java:1070)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+[LX 2025/11/01 00:34:36] Bad internal state, component 136285 of type heronarts.lx.structure.StripFixture does not exist, cannot get parameter: x
+[LX 2025/11/01 00:34:36] FATAL ERROR IN LXEngine.processInputEvents(): Cannot invoke "heronarts.lx.parameter.LXParameter.setValue(double)" because the return value of "heronarts.lx.command.LXCommand$ParameterReference.get()" is null
+java.lang.NullPointerException: Cannot invoke "heronarts.lx.parameter.LXParameter.setValue(double)" because the return value of "heronarts.lx.command.LXCommand$ParameterReference.get()" is null
+	at heronarts.lx.command.LXCommand$Parameter$SetValue.perform(LXCommand.java:454)
+	at heronarts.lx.command.LXCommand$Structure$ModifyFixturePositions.update(LXCommand.java:2745)
+	at heronarts.lx.structure.LXStructure.translateSelectedFixtures(LXStructure.java:514)
+	at heronarts.lx.studio.ui.preview.UIPreviewWindow$2.translate(UIPreviewWindow.java:315)
+	at heronarts.glx.ui.UI3dContext.onMouseDragged(UI3dContext.java:947)
+	at heronarts.glx.ui.UIObject.mouseDragged(UIObject.java:746)
+	at heronarts.glx.ui.UIObject.mouseDragged(UIObject.java:737)
+	at heronarts.glx.ui.UI.mouseEvent(UI.java:1105)
+	at heronarts.glx.InputDispatch.dispatch(InputDispatch.java:273)
+	at heronarts.lx.LXEngine._processInputEvents(LXEngine.java:1096)
+	at heronarts.lx.LXEngine.processInputEvents(LXEngine.java:1072)
+	at heronarts.lx.LXEngine.access$0(LXEngine.java:1070)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+[LX 2025/11/01 00:34:36] Bad internal state, component 136285 of type heronarts.lx.structure.StripFixture does not exist, cannot get parameter: x
+[LX 2025/11/01 00:34:36] FATAL ERROR IN LXEngine.processInputEvents(): Cannot invoke "heronarts.lx.parameter.LXParameter.setValue(double)" because the return value of "heronarts.lx.command.LXCommand$ParameterReference.get()" is null
+java.lang.NullPointerException: Cannot invoke "heronarts.lx.parameter.LXParameter.setValue(double)" because the return value of "heronarts.lx.command.LXCommand$ParameterReference.get()" is null
+	at heronarts.lx.command.LXCommand$Parameter$SetValue.perform(LXCommand.java:454)
+	at heronarts.lx.command.LXCommand$Structure$ModifyFixturePositions.update(LXCommand.java:2745)
+	at heronarts.lx.structure.LXStructure.translateSelectedFixtures(LXStructure.java:514)
+	at heronarts.lx.studio.ui.preview.UIPreviewWindow$2.translate(UIPreviewWindow.java:315)
+	at heronarts.glx.ui.UI3dContext.onMouseDragged(UI3dContext.java:947)
+	at heronarts.glx.ui.UIObject.mouseDragged(UIObject.java:746)
+	at heronarts.glx.ui.UIObject.mouseDragged(UIObject.java:737)
+	at heronarts.glx.ui.UI.mouseEvent(UI.java:1105)
+	at heronarts.glx.InputDispatch.dispatch(InputDispatch.java:273)
+	at heronarts.lx.LXEngine._processInputEvents(LXEngine.java:1096)
+	at heronarts.lx.LXEngine.processInputEvents(LXEngine.java:1072)
+	at heronarts.lx.LXEngine.access$0(LXEngine.java:1070)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+[LX 2025/11/01 00:34:36] Bad internal state, component 136285 of type heronarts.lx.structure.StripFixture does not exist, cannot get parameter: x
+[LX 2025/11/01 00:34:36] FATAL ERROR IN LXEngine.processInputEvents(): Cannot invoke "heronarts.lx.parameter.LXParameter.setValue(double)" because the return value of "heronarts.lx.command.LXCommand$ParameterReference.get()" is null
+java.lang.NullPointerException: Cannot invoke "heronarts.lx.parameter.LXParameter.setValue(double)" because the return value of "heronarts.lx.command.LXCommand$ParameterReference.get()" is null
+	at heronarts.lx.command.LXCommand$Parameter$SetValue.perform(LXCommand.java:454)
+	at heronarts.lx.command.LXCommand$Structure$ModifyFixturePositions.update(LXCommand.java:2745)
+	at heronarts.lx.structure.LXStructure.translateSelectedFixtures(LXStructure.java:514)
+	at heronarts.lx.studio.ui.preview.UIPreviewWindow$2.translate(UIPreviewWindow.java:315)
+	at heronarts.glx.ui.UI3dContext.onMouseDragged(UI3dContext.java:947)
+	at heronarts.glx.ui.UIObject.mouseDragged(UIObject.java:746)
+	at heronarts.glx.ui.UIObject.mouseDragged(UIObject.java:737)
+	at heronarts.glx.ui.UI.mouseEvent(UI.java:1105)
+	at heronarts.glx.InputDispatch.dispatch(InputDispatch.java:273)
+	at heronarts.lx.LXEngine._processInputEvents(LXEngine.java:1096)
+	at heronarts.lx.LXEngine.processInputEvents(LXEngine.java:1072)
+	at heronarts.lx.LXEngine.access$0(LXEngine.java:1070)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+[LX 2025/11/01 00:34:36] Bad internal state, component 136285 of type heronarts.lx.structure.StripFixture does not exist, cannot get parameter: x
+[LX 2025/11/01 00:34:36] FATAL ERROR IN LXEngine.processInputEvents(): Cannot invoke "heronarts.lx.parameter.LXParameter.setValue(double)" because the return value of "heronarts.lx.command.LXCommand$ParameterReference.get()" is null
+java.lang.NullPointerException: Cannot invoke "heronarts.lx.parameter.LXParameter.setValue(double)" because the return value of "heronarts.lx.command.LXCommand$ParameterReference.get()" is null
+	at heronarts.lx.command.LXCommand$Parameter$SetValue.perform(LXCommand.java:454)
+	at heronarts.lx.command.LXCommand$Structure$ModifyFixturePositions.update(LXCommand.java:2745)
+	at heronarts.lx.structure.LXStructure.translateSelectedFixtures(LXStructure.java:514)
+	at heronarts.lx.studio.ui.preview.UIPreviewWindow$2.translate(UIPreviewWindow.java:315)
+	at heronarts.glx.ui.UI3dContext.onMouseDragged(UI3dContext.java:947)
+	at heronarts.glx.ui.UIObject.mouseDragged(UIObject.java:746)
+	at heronarts.glx.ui.UIObject.mouseDragged(UIObject.java:737)
+	at heronarts.glx.ui.UI.mouseEvent(UI.java:1105)
+	at heronarts.glx.InputDispatch.dispatch(InputDispatch.java:273)
+	at heronarts.lx.LXEngine._processInputEvents(LXEngine.java:1096)
+	at heronarts.lx.LXEngine.processInputEvents(LXEngine.java:1072)
+	at heronarts.lx.LXEngine.access$0(LXEngine.java:1070)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+[LX 2025/11/01 00:34:36] Bad internal state, component 136285 of type heronarts.lx.structure.StripFixture does not exist, cannot get parameter: x
+[LX 2025/11/01 00:34:36] FATAL ERROR IN LXEngine.processInputEvents(): Cannot invoke "heronarts.lx.parameter.LXParameter.setValue(double)" because the return value of "heronarts.lx.command.LXCommand$ParameterReference.get()" is null
+java.lang.NullPointerException: Cannot invoke "heronarts.lx.parameter.LXParameter.setValue(double)" because the return value of "heronarts.lx.command.LXCommand$ParameterReference.get()" is null
+	at heronarts.lx.command.LXCommand$Parameter$SetValue.perform(LXCommand.java:454)
+	at heronarts.lx.command.LXCommand$Structure$ModifyFixturePositions.update(LXCommand.java:2745)
+	at heronarts.lx.structure.LXStructure.translateSelectedFixtures(LXStructure.java:514)
+	at heronarts.lx.studio.ui.preview.UIPreviewWindow$2.translate(UIPreviewWindow.java:315)
+	at heronarts.glx.ui.UI3dContext.onMouseDragged(UI3dContext.java:947)
+	at heronarts.glx.ui.UIObject.mouseDragged(UIObject.java:746)
+	at heronarts.glx.ui.UIObject.mouseDragged(UIObject.java:737)
+	at heronarts.glx.ui.UI.mouseEvent(UI.java:1105)
+	at heronarts.glx.InputDispatch.dispatch(InputDispatch.java:273)
+	at heronarts.lx.LXEngine._processInputEvents(LXEngine.java:1096)
+	at heronarts.lx.LXEngine.processInputEvents(LXEngine.java:1072)
+	at heronarts.lx.LXEngine.access$0(LXEngine.java:1070)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+[LX 2025/11/01 00:34:36] Bad internal state, component 136285 of type heronarts.lx.structure.StripFixture does not exist, cannot get parameter: x
+[LX 2025/11/01 00:34:36] FATAL ERROR IN LXEngine.processInputEvents(): Cannot invoke "heronarts.lx.parameter.LXParameter.setValue(double)" because the return value of "heronarts.lx.command.LXCommand$ParameterReference.get()" is null
+java.lang.NullPointerException: Cannot invoke "heronarts.lx.parameter.LXParameter.setValue(double)" because the return value of "heronarts.lx.command.LXCommand$ParameterReference.get()" is null
+	at heronarts.lx.command.LXCommand$Parameter$SetValue.perform(LXCommand.java:454)
+	at heronarts.lx.command.LXCommand$Structure$ModifyFixturePositions.update(LXCommand.java:2745)
+	at heronarts.lx.structure.LXStructure.translateSelectedFixtures(LXStructure.java:514)
+	at heronarts.lx.studio.ui.preview.UIPreviewWindow$2.translate(UIPreviewWindow.java:315)
+	at heronarts.glx.ui.UI3dContext.onMouseDragged(UI3dContext.java:947)
+	at heronarts.glx.ui.UIObject.mouseDragged(UIObject.java:746)
+	at heronarts.glx.ui.UIObject.mouseDragged(UIObject.java:737)
+	at heronarts.glx.ui.UI.mouseEvent(UI.java:1105)
+	at heronarts.glx.InputDispatch.dispatch(InputDispatch.java:273)
+	at heronarts.lx.LXEngine._processInputEvents(LXEngine.java:1096)
+	at heronarts.lx.LXEngine.processInputEvents(LXEngine.java:1072)
+	at heronarts.lx.LXEngine.access$0(LXEngine.java:1070)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+[LX 2025/11/01 00:34:36] Bad internal state, component 136285 of type heronarts.lx.structure.StripFixture does not exist, cannot get parameter: x
+[LX 2025/11/01 00:34:36] FATAL ERROR IN LXEngine.processInputEvents(): Cannot invoke "heronarts.lx.parameter.LXParameter.setValue(double)" because the return value of "heronarts.lx.command.LXCommand$ParameterReference.get()" is null
+java.lang.NullPointerException: Cannot invoke "heronarts.lx.parameter.LXParameter.setValue(double)" because the return value of "heronarts.lx.command.LXCommand$ParameterReference.get()" is null
+	at heronarts.lx.command.LXCommand$Parameter$SetValue.perform(LXCommand.java:454)
+	at heronarts.lx.command.LXCommand$Structure$ModifyFixturePositions.update(LXCommand.java:2745)
+	at heronarts.lx.structure.LXStructure.translateSelectedFixtures(LXStructure.java:514)
+	at heronarts.lx.studio.ui.preview.UIPreviewWindow$2.translate(UIPreviewWindow.java:315)
+	at heronarts.glx.ui.UI3dContext.onMouseDragged(UI3dContext.java:947)
+	at heronarts.glx.ui.UIObject.mouseDragged(UIObject.java:746)
+	at heronarts.glx.ui.UIObject.mouseDragged(UIObject.java:737)
+	at heronarts.glx.ui.UI.mouseEvent(UI.java:1105)
+	at heronarts.glx.InputDispatch.dispatch(InputDispatch.java:273)
+	at heronarts.lx.LXEngine._processInputEvents(LXEngine.java:1096)
+	at heronarts.lx.LXEngine.processInputEvents(LXEngine.java:1072)
+	at heronarts.lx.LXEngine.access$0(LXEngine.java:1070)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+[LX 2025/11/01 00:34:36] Bad internal state, component 136285 of type heronarts.lx.structure.StripFixture does not exist, cannot get parameter: x
+[LX 2025/11/01 00:34:36] FATAL ERROR IN LXEngine.processInputEvents(): Cannot invoke "heronarts.lx.parameter.LXParameter.setValue(double)" because the return value of "heronarts.lx.command.LXCommand$ParameterReference.get()" is null
+java.lang.NullPointerException: Cannot invoke "heronarts.lx.parameter.LXParameter.setValue(double)" because the return value of "heronarts.lx.command.LXCommand$ParameterReference.get()" is null
+	at heronarts.lx.command.LXCommand$Parameter$SetValue.perform(LXCommand.java:454)
+	at heronarts.lx.command.LXCommand$Structure$ModifyFixturePositions.update(LXCommand.java:2745)
+	at heronarts.lx.structure.LXStructure.translateSelectedFixtures(LXStructure.java:514)
+	at heronarts.lx.studio.ui.preview.UIPreviewWindow$2.translate(UIPreviewWindow.java:315)
+	at heronarts.glx.ui.UI3dContext.onMouseDragged(UI3dContext.java:947)
+	at heronarts.glx.ui.UIObject.mouseDragged(UIObject.java:746)
+	at heronarts.glx.ui.UIObject.mouseDragged(UIObject.java:737)
+	at heronarts.glx.ui.UI.mouseEvent(UI.java:1105)
+	at heronarts.glx.InputDispatch.dispatch(InputDispatch.java:273)
+	at heronarts.lx.LXEngine._processInputEvents(LXEngine.java:1096)
+	at heronarts.lx.LXEngine.processInputEvents(LXEngine.java:1072)
+	at heronarts.lx.LXEngine.access$0(LXEngine.java:1070)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+[LX 2025/11/01 00:34:36] Bad internal state, component 136285 of type heronarts.lx.structure.StripFixture does not exist, cannot get parameter: x
+[LX 2025/11/01 00:34:36] FATAL ERROR IN LXEngine.processInputEvents(): Cannot invoke "heronarts.lx.parameter.LXParameter.setValue(double)" because the return value of "heronarts.lx.command.LXCommand$ParameterReference.get()" is null
+java.lang.NullPointerException: Cannot invoke "heronarts.lx.parameter.LXParameter.setValue(double)" because the return value of "heronarts.lx.command.LXCommand$ParameterReference.get()" is null
+	at heronarts.lx.command.LXCommand$Parameter$SetValue.perform(LXCommand.java:454)
+	at heronarts.lx.command.LXCommand$Structure$ModifyFixturePositions.update(LXCommand.java:2745)
+	at heronarts.lx.structure.LXStructure.translateSelectedFixtures(LXStructure.java:514)
+	at heronarts.lx.studio.ui.preview.UIPreviewWindow$2.translate(UIPreviewWindow.java:315)
+	at heronarts.glx.ui.UI3dContext.onMouseDragged(UI3dContext.java:947)
+	at heronarts.glx.ui.UIObject.mouseDragged(UIObject.java:746)
+	at heronarts.glx.ui.UIObject.mouseDragged(UIObject.java:737)
+	at heronarts.glx.ui.UI.mouseEvent(UI.java:1105)
+	at heronarts.glx.InputDispatch.dispatch(InputDispatch.java:273)
+	at heronarts.lx.LXEngine._processInputEvents(LXEngine.java:1096)
+	at heronarts.lx.LXEngine.processInputEvents(LXEngine.java:1072)
+	at heronarts.lx.LXEngine.access$0(LXEngine.java:1070)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+[LX 2025/11/01 00:34:36] Bad internal state, component 136285 of type heronarts.lx.structure.StripFixture does not exist, cannot get parameter: x
+[LX 2025/11/01 00:34:36] FATAL ERROR IN LXEngine.processInputEvents(): Cannot invoke "heronarts.lx.parameter.LXParameter.setValue(double)" because the return value of "heronarts.lx.command.LXCommand$ParameterReference.get()" is null
+java.lang.NullPointerException: Cannot invoke "heronarts.lx.parameter.LXParameter.setValue(double)" because the return value of "heronarts.lx.command.LXCommand$ParameterReference.get()" is null
+	at heronarts.lx.command.LXCommand$Parameter$SetValue.perform(LXCommand.java:454)
+	at heronarts.lx.command.LXCommand$Structure$ModifyFixturePositions.update(LXCommand.java:2745)
+	at heronarts.lx.structure.LXStructure.translateSelectedFixtures(LXStructure.java:514)
+	at heronarts.lx.studio.ui.preview.UIPreviewWindow$2.translate(UIPreviewWindow.java:315)
+	at heronarts.glx.ui.UI3dContext.onMouseDragged(UI3dContext.java:947)
+	at heronarts.glx.ui.UIObject.mouseDragged(UIObject.java:746)
+	at heronarts.glx.ui.UIObject.mouseDragged(UIObject.java:737)
+	at heronarts.glx.ui.UI.mouseEvent(UI.java:1105)
+	at heronarts.glx.InputDispatch.dispatch(InputDispatch.java:273)
+	at heronarts.lx.LXEngine._processInputEvents(LXEngine.java:1096)
+	at heronarts.lx.LXEngine.processInputEvents(LXEngine.java:1072)
+	at heronarts.lx.LXEngine.access$0(LXEngine.java:1070)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+[LX 2025/11/01 00:34:36] Bad internal state, component 136285 of type heronarts.lx.structure.StripFixture does not exist, cannot get parameter: x
+[LX 2025/11/01 00:34:36] FATAL ERROR IN LXEngine.processInputEvents(): Cannot invoke "heronarts.lx.parameter.LXParameter.setValue(double)" because the return value of "heronarts.lx.command.LXCommand$ParameterReference.get()" is null
+java.lang.NullPointerException: Cannot invoke "heronarts.lx.parameter.LXParameter.setValue(double)" because the return value of "heronarts.lx.command.LXCommand$ParameterReference.get()" is null
+	at heronarts.lx.command.LXCommand$Parameter$SetValue.perform(LXCommand.java:454)
+	at heronarts.lx.command.LXCommand$Structure$ModifyFixturePositions.update(LXCommand.java:2745)
+	at heronarts.lx.structure.LXStructure.translateSelectedFixtures(LXStructure.java:514)
+	at heronarts.lx.studio.ui.preview.UIPreviewWindow$2.translate(UIPreviewWindow.java:315)
+	at heronarts.glx.ui.UI3dContext.onMouseDragged(UI3dContext.java:947)
+	at heronarts.glx.ui.UIObject.mouseDragged(UIObject.java:746)
+	at heronarts.glx.ui.UIObject.mouseDragged(UIObject.java:737)
+	at heronarts.glx.ui.UI.mouseEvent(UI.java:1105)
+	at heronarts.glx.InputDispatch.dispatch(InputDispatch.java:273)
+	at heronarts.lx.LXEngine._processInputEvents(LXEngine.java:1096)
+	at heronarts.lx.LXEngine.processInputEvents(LXEngine.java:1072)
+	at heronarts.lx.LXEngine.access$0(LXEngine.java:1070)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+[LX 2025/11/01 00:34:52] Project saved successfully to /Users/ben/Chromatik/Projects/Blinkydome2025_wiskers2.lxp
+[LX 2025/11/01 14:48:11] Bad internal state, component 136204 of type heronarts.lx.structure.StripFixture does not exist, cannot get parameter: x
+[LX 2025/11/01 14:48:11] FATAL ERROR IN LXEngine.processInputEvents(): Cannot invoke "heronarts.lx.parameter.LXParameter.setValue(double)" because the return value of "heronarts.lx.command.LXCommand$ParameterReference.get()" is null
+java.lang.NullPointerException: Cannot invoke "heronarts.lx.parameter.LXParameter.setValue(double)" because the return value of "heronarts.lx.command.LXCommand$ParameterReference.get()" is null
+	at heronarts.lx.command.LXCommand$Parameter$SetValue.perform(LXCommand.java:454)
+	at heronarts.lx.command.LXCommand$Structure$ModifyFixturePositions.update(LXCommand.java:2745)
+	at heronarts.lx.structure.LXStructure.translateSelectedFixtures(LXStructure.java:514)
+	at heronarts.lx.studio.ui.preview.UIPreviewWindow$2.translate(UIPreviewWindow.java:315)
+	at heronarts.glx.ui.UI3dContext.onMouseDragged(UI3dContext.java:947)
+	at heronarts.glx.ui.UIObject.mouseDragged(UIObject.java:746)
+	at heronarts.glx.ui.UIObject.mouseDragged(UIObject.java:737)
+	at heronarts.glx.ui.UI.mouseEvent(UI.java:1105)
+	at heronarts.glx.InputDispatch.dispatch(InputDispatch.java:273)
+	at heronarts.lx.LXEngine._processInputEvents(LXEngine.java:1096)
+	at heronarts.lx.LXEngine.processInputEvents(LXEngine.java:1072)
+	at heronarts.lx.LXEngine.access$0(LXEngine.java:1070)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+[LX 2025/11/01 14:48:12] Bad internal state, component 136204 of type heronarts.lx.structure.StripFixture does not exist, cannot get parameter: x
+[LX 2025/11/01 14:48:12] FATAL ERROR IN LXEngine.processInputEvents(): null
+java.lang.NullPointerException
+[LX 2025/11/01 14:48:12] Bad internal state, component 136204 of type heronarts.lx.structure.StripFixture does not exist, cannot get parameter: x
+[LX 2025/11/01 14:48:12] FATAL ERROR IN LXEngine.processInputEvents(): null
+java.lang.NullPointerException
+[LX 2025/11/01 14:48:12] Bad internal state, component 136204 of type heronarts.lx.structure.StripFixture does not exist, cannot get parameter: x
+[LX 2025/11/01 14:48:12] FATAL ERROR IN LXEngine.processInputEvents(): null
+java.lang.NullPointerException
+[LX 2025/11/01 14:48:12] Bad internal state, component 136204 of type heronarts.lx.structure.StripFixture does not exist, cannot get parameter: x
+[LX 2025/11/01 14:48:12] FATAL ERROR IN LXEngine.processInputEvents(): null
+java.lang.NullPointerException
+[LX 2025/11/01 14:48:12] Bad internal state, component 136204 of type heronarts.lx.structure.StripFixture does not exist, cannot get parameter: x
+[LX 2025/11/01 14:48:12] FATAL ERROR IN LXEngine.processInputEvents(): null
+java.lang.NullPointerException
+[LX 2025/11/01 14:48:12] Bad internal state, component 136204 of type heronarts.lx.structure.StripFixture does not exist, cannot get parameter: x
+[LX 2025/11/01 14:48:12] FATAL ERROR IN LXEngine.processInputEvents(): null
+java.lang.NullPointerException
+[LX 2025/11/01 14:48:12] Bad internal state, component 136204 of type heronarts.lx.structure.StripFixture does not exist, cannot get parameter: x
+[LX 2025/11/01 14:48:12] FATAL ERROR IN LXEngine.processInputEvents(): null
+java.lang.NullPointerException
+[LX 2025/11/01 14:48:12] Bad internal state, component 136204 of type heronarts.lx.structure.StripFixture does not exist, cannot get parameter: x
+[LX 2025/11/01 14:48:12] FATAL ERROR IN LXEngine.processInputEvents(): null
+java.lang.NullPointerException
+[LX 2025/11/01 14:48:12] Bad internal state, component 136204 of type heronarts.lx.structure.StripFixture does not exist, cannot get parameter: x
+[LX 2025/11/01 14:48:12] FATAL ERROR IN LXEngine.processInputEvents(): null
+java.lang.NullPointerException
+[LX 2025/11/01 14:48:12] Bad internal state, component 136204 of type heronarts.lx.structure.StripFixture does not exist, cannot get parameter: x
+[LX 2025/11/01 14:48:12] FATAL ERROR IN LXEngine.processInputEvents(): null
+java.lang.NullPointerException
+[LX 2025/11/01 14:48:12] Bad internal state, component 136204 of type heronarts.lx.structure.StripFixture does not exist, cannot get parameter: x
+[LX 2025/11/01 14:48:12] FATAL ERROR IN LXEngine.processInputEvents(): null
+java.lang.NullPointerException
+[LX 2025/11/01 14:48:12] Bad internal state, component 136204 of type heronarts.lx.structure.StripFixture does not exist, cannot get parameter: x
+[LX 2025/11/01 14:48:12] FATAL ERROR IN LXEngine.processInputEvents(): null
+java.lang.NullPointerException
+[LX 2025/11/01 14:48:12] Bad internal state, component 136204 of type heronarts.lx.structure.StripFixture does not exist, cannot get parameter: x
+[LX 2025/11/01 14:48:12] FATAL ERROR IN LXEngine.processInputEvents(): null
+java.lang.NullPointerException
+[LX 2025/11/01 14:48:12] Bad internal state, component 136204 of type heronarts.lx.structure.StripFixture does not exist, cannot get parameter: x
+[LX 2025/11/01 14:48:12] FATAL ERROR IN LXEngine.processInputEvents(): null
+java.lang.NullPointerException
+[LX 2025/11/01 14:48:12] Bad internal state, component 136204 of type heronarts.lx.structure.StripFixture does not exist, cannot get parameter: x
+[LX 2025/11/01 14:48:12] FATAL ERROR IN LXEngine.processInputEvents(): null
+java.lang.NullPointerException
+[LX 2025/11/01 14:48:12] Bad internal state, component 136204 of type heronarts.lx.structure.StripFixture does not exist, cannot get parameter: x
+[LX 2025/11/01 14:48:12] FATAL ERROR IN LXEngine.processInputEvents(): null
+java.lang.NullPointerException
+[LX 2025/11/01 14:48:12] Bad internal state, component 136204 of type heronarts.lx.structure.StripFixture does not exist, cannot get parameter: x
+[LX 2025/11/01 14:48:12] FATAL ERROR IN LXEngine.processInputEvents(): null
+java.lang.NullPointerException
+[LX 2025/11/01 14:48:12] Bad internal state, component 136204 of type heronarts.lx.structure.StripFixture does not exist, cannot get parameter: x
+[LX 2025/11/01 14:48:12] FATAL ERROR IN LXEngine.processInputEvents(): null
+java.lang.NullPointerException
+[LX 2025/11/01 14:48:12] Bad internal state, component 136204 of type heronarts.lx.structure.StripFixture does not exist, cannot get parameter: x
+[LX 2025/11/01 14:48:12] FATAL ERROR IN LXEngine.processInputEvents(): null
+java.lang.NullPointerException
+[LX 2025/11/01 17:13:53] Project saved successfully to /Users/ben/Chromatik/Projects/Blinkydome2025_eyestar.lxp
+[LX 2025/11/02 16:54:14] Project saved successfully to /Users/ben/Chromatik/Projects/Blinkydome2025_eyestar.lxp
+[LX 2025/11/02 16:59:33] Project saved successfully to /Users/ben/Chromatik/Projects/Blinkydome2025_eyestar.lxp
+[LX 2025/11/02 17:10:56] Project saved successfully to /Users/ben/Chromatik/Projects/Blinkydome2025_eyestar.lxp
+[LX 2025/11/02 17:16:29] Project saved successfully to /Users/ben/Chromatik/Projects/Blinkydome2025_eyestar.lxp
+[LX 2025/11/02 17:20:06] Project saved successfully to /Users/ben/Chromatik/Projects/Blinkydome2025_eyestar.lxp
+[LX 2025/11/02 17:21:27] Project saved successfully to /Users/ben/Chromatik/Projects/Blinkydome2025_eyestar.lxp
+[LX 2025/11/02 17:28:27] Project saved successfully to /Users/ben/Chromatik/Projects/Blinkydome2025_eyestar.lxp
+[LX 2025/11/02 17:33:00] Project saved successfully to /Users/ben/Chromatik/Projects/Blinkydome2025_eyestar.lxp
+[LX 2025/11/02 17:33:15] Project saved successfully to /Users/ben/Chromatik/Projects/Blinkydome2025_eyestar.lxp
+[LX 2025/11/02 17:35:55] Project saved successfully to /Users/ben/Chromatik/Projects/Blinkydome2025_eyestar.lxp
+[LX 2025/11/02 17:41:44] Project saved successfully to /Users/ben/Chromatik/Projects/Blinkydome2025_eyestar.lxp
+[LX 2025/11/02 17:48:58] Project saved successfully to /Users/ben/Chromatik/Projects/Blinkydome2025_eyestar.lxp
+[LX 2025/11/02 18:10:38] Project saved successfully to /Users/ben/Chromatik/Projects/Blinkydome2025_eyestar.lxp
+[LX 2025/11/02 18:14:48] Project saved successfully to /Users/ben/Chromatik/Projects/Blinkydome2025_eyestar.lxp
+[LX 2025/11/02 18:18:18] Project saved successfully to /Users/ben/Chromatik/Projects/Blinkydome2025_eyestar.lxp
+[LX 2025/11/02 18:19:07] Project saved successfully to /Users/ben/Chromatik/Projects/Blinkydome2025_eyestar.lxp
+[LX 2025/11/02 18:44:09] Project saved successfully to /Users/ben/Chromatik/Projects/Blinkydome2025_eyestar.lxp
+[LX 2025/11/02 19:13:59] Project saved successfully to /Users/ben/Chromatik/Projects/Blinkydome2025_eyestar.lxp
+[LX 2025/11/02 19:19:44] Project saved successfully to /Users/ben/Chromatik/Projects/Blinkydome2025_eyestar.lxp
+[LX 2025/11/02 19:23:07] Project loaded successfully from /Users/ben/Chromatik/Projects/Blinkydome2025_eyestar.lxp
+[LX 2025/11/02 19:26:42] Project saved successfully to /Users/ben/Chromatik/Projects/Blinkydome2025_eyestar.lxp
+[LX 2025/11/02 19:30:29] Project saved successfully to /Users/ben/Chromatik/Projects/Blinkydome2025_eyestar.lxp
+[GLX 2025/11/02 19:32:54] Framebuffer had to initialize itself before a bind() call ever occurred - UIRestrictions
+java.lang.Exception
+	at heronarts.glx.ui.vg.VGraphics$Framebuffer.initialize(VGraphics.java:294)
+	at heronarts.glx.ui.UI2dContext.draw(UI2dContext.java:104)
+	at heronarts.glx.ui.UI$UIRoot.draw(UI.java:372)
+	at heronarts.glx.ui.UI.draw(UI.java:1064)
+	at heronarts.glx.GLX.draw(GLX.java:782)
+	at heronarts.glx.GLX.loop(GLX.java:733)
+	at heronarts.glx.GLX.run(GLX.java:276)
+	at heronarts.lx.studio.Chromatik.main(Chromatik.java:349)
+[LX 2025/11/02 19:34:48] Project saved successfully to /Users/ben/Chromatik/Projects/Blinkydome2025_eyestar.lxp
+[LX 2025/11/02 19:37:49] Project saved successfully to /Users/ben/Chromatik/Projects/Blinkydome2025_eyestar.lxp
+[LX 2025/11/02 19:38:05] Project saved successfully to /Users/ben/Chromatik/Projects/Blinkydome2025_tojapan.lxp
+[LX 2025/11/02 20:45:15] Project saved successfully to /Users/ben/Chromatik/Projects/Blinkydome2025_tojapan.lxp
+[LX 2025/11/03 11:37:47] Project saved successfully to /Users/ben/Chromatik/Projects/Blinkydome2025_tojapan.lxp
+[LX 2025/11/03 11:39:42] Project saved successfully to /Users/ben/Chromatik/Projects/Blinkydome2025_tojapan.lxp
+[LX 2025/11/03 12:05:07] Project saved successfully to /Users/ben/Chromatik/Projects/Blinkydome2025_tojapan.lxp
+[LX 2025/11/03 12:12:54] Project saved successfully to /Users/ben/Chromatik/Projects/Blinkydome2025_tojapan.lxp
+[LX 2025/11/03 12:16:09] Project saved successfully to /Users/ben/Chromatik/Projects/Blinkydome2025_tojapan.lxp
+[LX 2025/11/03 12:18:20] Project saved successfully to /Users/ben/Chromatik/Projects/Blinkydome2025_tojapan.lxp
+[LX 2025/11/03 12:23:35] Project saved successfully to /Users/ben/Chromatik/Projects/Blinkydome2025_tojapan.lxp
+[LX 2025/11/03 12:23:52] Project saved successfully to /Users/ben/Chromatik/Projects/Blinkydome2025_tojapan.lxp
+[LX 2025/11/04 04:23:24] Project saved successfully to /Users/ben/Chromatik/Projects/Blinkydome2025_tojapan.lxp
+[GLX 2025/11/04 04:23:30] Stopping LX engine...
+[LX 2025/11/04 04:23:30] LXEngine.ExecutorService has finished.
+[LX 2025/11/04 04:23:30] [MIDI] LXMidiEngine Device Update Thread finished.
+[GLX 2025/11/04 04:23:30] Done with main thread, GLX shutdown complete. Thanks for playing. <3

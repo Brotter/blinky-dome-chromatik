@@ -1,0 +1,46 @@
+[Chromatik 2025/08/07 16:56:39] Starting Chromatik version 1.1.0
+[Chromatik 2025/08/07 16:56:39] Running java 21.0.6 Eclipse Adoptium Mac OS X 14.5 aarch64
+[Chromatik 2025/08/07 16:56:39] No Chromatik license present, features will be limited.
+[GLX 2025/08/07 16:56:39] GLX monitorWorkarea: size(1470x918), pos(x:0,y:38)
+[GLX 2025/08/07 16:56:39] GLX createWindow: 1280x720
+[GLX 2025/08/07 16:56:39] GLX systemContentScale: 2.0x2.0
+[GLX 2025/08/07 16:56:39] GLX windowSize: 1280x720
+[GLX 2025/08/07 16:56:39] GLX framebufferSize: 2560x1440
+[GLX 2025/08/07 16:56:39] GLX uiSize: 1280.0x720.0
+[GLX 2025/08/07 16:56:39] GLX cursorScale: 1.0x1.0
+[GLX 2025/08/07 16:56:40] Using BGFX renderer: Metal
+[Chromatik 2025/08/07 16:56:40] EULA has not been accepted, engine is disabled. Read the license at: https://chromatik.co/license/
+[Chromatik 2025/08/07 16:56:40] To accept EULA via CLI, add the flag --accept-eula
+[GLX 2025/08/07 16:56:40] Starting LX Engine...
+[LX 2025/08/07 16:56:40] LXEngine.ExecutorService starting...
+[GLX 2025/08/07 16:56:40] Bootstrap complete, running main loop.
+[LX 2025/08/07 16:56:40] Opening project file: /Users/ben/Chromatik/Projects/Examples/Demo.lxp
+[LX 2025/08/07 16:56:40] Project loaded successfully from /Users/ben/Chromatik/Projects/Examples/Demo.lxp
+[LX 2025/08/07 16:56:40] [I/O] Network output is disabled due to license restrictions.
+[LX 2025/08/07 16:57:14] Fixture BlinkyH0.lxf: Invalid fixture type, could not find file: /Users/ben/Chromatik/Fixtures/BlinkyH0.lxf
+[LX 2025/08/07 16:57:14] Fixture BlinkyH1.lxf: Invalid fixture type, could not find file: /Users/ben/Chromatik/Fixtures/BlinkyH1.lxf
+[LX 2025/08/07 16:57:14] Fixture BlinkyH2.lxf: Invalid fixture type, could not find file: /Users/ben/Chromatik/Fixtures/BlinkyH2.lxf
+[LX 2025/08/07 16:57:14] Fixture BlinkyH3.lxf: Invalid fixture type, could not find file: /Users/ben/Chromatik/Fixtures/BlinkyH3.lxf
+[LX 2025/08/07 16:57:14] Fixture BlinkyH0.lxf: Invalid fixture type, could not find file: /Users/ben/Chromatik/Fixtures/BlinkyH0.lxf
+[LX 2025/08/07 16:57:14] Fixture BlinkyH1.lxf: Invalid fixture type, could not find file: /Users/ben/Chromatik/Fixtures/BlinkyH1.lxf
+[LX 2025/08/07 16:57:14] Fixture BlinkyH2.lxf: Invalid fixture type, could not find file: /Users/ben/Chromatik/Fixtures/BlinkyH2.lxf
+[LX 2025/08/07 16:57:14] Fixture BlinkyH3.lxf: Invalid fixture type, could not find file: /Users/ben/Chromatik/Fixtures/BlinkyH3.lxf
+[LX 2025/08/07 16:57:14] Fixture BlinkyH0.lxf: Invalid fixture type, could not find file: /Users/ben/Chromatik/Fixtures/BlinkyH0.lxf
+[LX 2025/08/07 16:57:14] Fixture BlinkyH1.lxf: Invalid fixture type, could not find file: /Users/ben/Chromatik/Fixtures/BlinkyH1.lxf
+[LX 2025/08/07 16:57:14] Fixture BlinkyH2.lxf: Invalid fixture type, could not find file: /Users/ben/Chromatik/Fixtures/BlinkyH2.lxf
+[LX 2025/08/07 16:57:14] Fixture BlinkyH3.lxf: Invalid fixture type, could not find file: /Users/ben/Chromatik/Fixtures/BlinkyH3.lxf
+[LX 2025/08/07 16:57:14] Fixture BlinkyH0.lxf: Invalid fixture type, could not find file: /Users/ben/Chromatik/Fixtures/BlinkyH0.lxf
+[LX 2025/08/07 16:57:14] Fixture BlinkyH1.lxf: Invalid fixture type, could not find file: /Users/ben/Chromatik/Fixtures/BlinkyH1.lxf
+[LX 2025/08/07 16:57:14] Fixture BlinkyH2.lxf: Invalid fixture type, could not find file: /Users/ben/Chromatik/Fixtures/BlinkyH2.lxf
+[LX 2025/08/07 16:57:14] Fixture BlinkyH3.lxf: Invalid fixture type, could not find file: /Users/ben/Chromatik/Fixtures/BlinkyH3.lxf
+[LX 2025/08/07 16:57:14] Fixture BlinkyH0.lxf: Invalid fixture type, could not find file: /Users/ben/Chromatik/Fixtures/BlinkyH0.lxf
+[LX 2025/08/07 16:57:14] Fixture BlinkyH1.lxf: Invalid fixture type, could not find file: /Users/ben/Chromatik/Fixtures/BlinkyH1.lxf
+[LX 2025/08/07 16:57:14] Fixture BlinkyH2.lxf: Invalid fixture type, could not find file: /Users/ben/Chromatik/Fixtures/BlinkyH2.lxf
+[LX 2025/08/07 16:57:14] Fixture BlinkyH3.lxf: Invalid fixture type, could not find file: /Users/ben/Chromatik/Fixtures/BlinkyH3.lxf
+[LX 2025/08/07 16:57:14] Project loaded successfully from /Users/ben/Chromatik/blinky-dome/Projects/Blinkydome2025.lxp
+[LX 2025/08/07 16:57:14] [I/O] Network output restored.
+[LX 2025/08/07 16:59:27] [I/O] Network output is disabled due to license restrictions.
+[GLX 2025/08/07 17:03:41] Stopping LX engine...
+[LX 2025/08/07 17:03:41] LXEngine.ExecutorService has finished.
+[LX 2025/08/07 17:03:41] [MIDI] LXMidiEngine Device Update Thread finished.
+[GLX 2025/08/07 17:03:41] Done with main thread, GLX shutdown complete. Thanks for playing. <3

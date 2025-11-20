@@ -1,0 +1,61 @@
+[Chromatik 2025/08/28 21:05:52] Starting Chromatik version 1.1.0
+[Chromatik 2025/08/28 21:05:52] Running java 21.0.6 Eclipse Adoptium Mac OS X 14.5 aarch64
+[Chromatik 2025/08/28 21:05:53] Licensed to Ben Rotter <benjrotter@gmail.com> - version 1.0.0 FREE - heronarts.lx.core
+[GLX 2025/08/28 21:05:53] GLX monitorWorkarea: size(1470x918), pos(x:0,y:38)
+[GLX 2025/08/28 21:05:53] GLX createWindow: 1470x890
+[GLX 2025/08/28 21:05:53] GLX systemContentScale: 2.0x2.0
+[GLX 2025/08/28 21:05:53] GLX windowSize: 1470x890
+[GLX 2025/08/28 21:05:53] GLX setWindowPos: 0,66
+[GLX 2025/08/28 21:05:53] GLX framebufferSize: 2940x1780
+[GLX 2025/08/28 21:05:53] GLX uiSize: 1470.0x890.0
+[GLX 2025/08/28 21:05:53] GLX cursorScale: 1.0x1.0
+[GLX 2025/08/28 21:05:53] Using BGFX renderer: Metal
+[GLX 2025/08/28 21:05:53] Starting LX Engine...
+[LX 2025/08/28 21:05:53] LXEngine.ExecutorService starting...
+[GLX 2025/08/28 21:05:53] Bootstrap complete, running main loop.
+[LX 2025/08/28 21:05:53] Opening project file: /Users/ben/Chromatik/Projects/Blinkydome2025_asdf.lxp
+[LX 2025/08/28 21:05:54] Started audio input thread: Default Audio Device
+[LX 2025/08/28 21:05:54] Started audio input thread: Scarlett Solo USB
+[LX 2025/08/28 21:05:55] Project loaded successfully from /Users/ben/Chromatik/Projects/Blinkydome2025_asdf.lxp
+[LX 2025/08/28 21:05:55] [I/O] Network output is disabled due to license restrictions.
+[GLX 2025/08/28 21:05:55] Framebuffer had to initialize itself before a bind() call ever occurred - UIRestrictions
+java.lang.Exception
+	at heronarts.glx.ui.vg.VGraphics$Framebuffer.initialize(VGraphics.java:294)
+	at heronarts.glx.ui.UI2dContext.draw(UI2dContext.java:104)
+	at heronarts.glx.ui.UI$UIRoot.draw(UI.java:372)
+	at heronarts.glx.ui.UI.draw(UI.java:1064)
+	at heronarts.glx.GLX.draw(GLX.java:782)
+	at heronarts.glx.GLX.loop(GLX.java:733)
+	at heronarts.glx.GLX.run(GLX.java:276)
+	at heronarts.lx.studio.Chromatik.main(Chromatik.java:349)
+[Chromatik 2025/08/28 21:06:20] Couldn't reach license server: Network is unreachable
+java.net.SocketException: Network is unreachable
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Unknown Source)
+	at java.base/sun.nio.ch.Net.connect(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(Unknown Source)
+	at java.base/java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.base/java.net.Socket.connect(Unknown Source)
+	at java.base/sun.security.ssl.SSLSocketImpl.connect(Unknown Source)
+	at java.base/sun.security.ssl.BaseSSLSocketImpl.connect(Unknown Source)
+	at java.base/sun.net.NetworkClient.doConnect(Unknown Source)
+	at java.base/sun.net.www.http.HttpClient.openServer(Unknown Source)
+	at java.base/sun.net.www.http.HttpClient.openServer(Unknown Source)
+	at java.base/sun.net.www.protocol.https.HttpsClient.<init>(Unknown Source)
+	at java.base/sun.net.www.protocol.https.HttpsClient.New(Unknown Source)
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(Unknown Source)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(Unknown Source)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(Unknown Source)
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(Unknown Source)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(Unknown Source)
+	at heronarts.lx.studio.License.licenseAttempt(License.java:475)
+	at heronarts.lx.studio.License.lambda$register$1(License.java:464)
+	at java.base/java.lang.Thread.run(Unknown Source)
+[LX 2025/08/28 21:06:20] Rendering engine restored within license limits.
+[LX 2025/08/28 21:06:20] [I/O] Network output is disabled due to license restrictions.
+[GLX 2025/09/22 14:03:05] Stopping LX engine...
+[LX 2025/09/22 14:03:05] LXEngine.ExecutorService has finished.
+[LX 2025/09/22 14:03:05] [MIDI] LXMidiEngine Device Update Thread finished.
+[GLX 2025/09/22 14:03:05] Done with main thread, GLX shutdown complete. Thanks for playing. <3

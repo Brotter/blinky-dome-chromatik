@@ -1,0 +1,25 @@
+[Chromatik 2025/11/18 16:26:50] Starting Chromatik version 1.1.0
+[Chromatik 2025/11/18 16:26:50] Running java 21.0.6 Eclipse Adoptium Mac OS X 14.5 aarch64
+[Chromatik 2025/11/18 16:26:51] Licensed to Ben Rotter <benjrotter@gmail.com> - version 1.0.0 FREE - heronarts.lx.core
+[GLX 2025/11/18 16:26:52] GLX monitorWorkarea: size(1470x918), pos(x:0,y:38)
+[GLX 2025/11/18 16:26:52] GLX createWindow: 1470x890
+[GLX 2025/11/18 16:26:52] GLX systemContentScale: 2.0x2.0
+[GLX 2025/11/18 16:26:52] GLX windowSize: 1470x890
+[GLX 2025/11/18 16:26:52] GLX setWindowPos: 0,66
+[GLX 2025/11/18 16:26:52] GLX framebufferSize: 2940x1780
+[GLX 2025/11/18 16:26:52] GLX uiSize: 1470.0x890.0
+[GLX 2025/11/18 16:26:52] GLX cursorScale: 1.0x1.0
+[GLX 2025/11/18 16:26:52] Using BGFX renderer: Metal
+[GLX 2025/11/18 16:26:52] Starting LX Engine...
+[LX 2025/11/18 16:26:52] LXEngine.ExecutorService starting...
+[GLX 2025/11/18 16:26:52] Bootstrap complete, running main loop.
+[LX 2025/11/18 16:26:52] Opening project file: /Users/ben/Chromatik/Projects/Blinkydome2025_fromjapan.lxp
+[LX 2025/11/18 16:26:52] Started audio input thread: Default Audio Device
+[LX 2025/11/18 16:26:53] Project loaded successfully from /Users/ben/Chromatik/Projects/Blinkydome2025_fromjapan.lxp
+[LX 2025/11/18 16:26:53] [I/O] Network output is disabled due to license restrictions.
+[LX 2025/11/18 16:53:47] Project saved successfully to /Users/ben/Chromatik/Projects/Blinkydome2025_fromjapan.lxp
+[LX 2025/11/18 17:05:27] Project saved successfully to /Users/ben/Chromatik/Projects/Blinkydome2025_fromjapan.lxp
+[LX 2025/11/18 22:58:41] Project saved successfully to /Users/ben/Chromatik/Projects/Blinkydome2025_correct geometry.lxp
+[LX 2025/11/19 15:50:02] Project saved successfully to /Users/ben/Chromatik/Projects/Blinkydome2025_correct geometry.lxp
+[LX 2025/11/19 15:51:29] Project saved successfully to /Users/ben/Chromatik/Projects/Blinkydome2025_correct geometry.lxp
+[LX 2025/11/19 15:52:25] Project saved successfully to /Users/ben/Chromatik/Projects/Blinkydome2025_correct geometry.lxp

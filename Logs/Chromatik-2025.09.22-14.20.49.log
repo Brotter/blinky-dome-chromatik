@@ -1,0 +1,24 @@
+[Chromatik 2025/09/22 14:20:49] Starting Chromatik version 1.1.0
+[Chromatik 2025/09/22 14:20:49] Running java 21.0.6 Eclipse Adoptium Mac OS X 14.5 aarch64
+[Chromatik 2025/09/22 14:20:49] Licensed to Ben Rotter <benjrotter@gmail.com> - version 1.0.0 FREE - heronarts.lx.core
+[GLX 2025/09/22 14:20:50] GLX monitorWorkarea: size(1470x918), pos(x:0,y:38)
+[GLX 2025/09/22 14:20:50] GLX createWindow: 1470x890
+[GLX 2025/09/22 14:20:51] GLX systemContentScale: 2.0x2.0
+[GLX 2025/09/22 14:20:51] GLX windowSize: 1470x890
+[GLX 2025/09/22 14:20:51] GLX setWindowPos: 0,66
+[GLX 2025/09/22 14:20:51] GLX framebufferSize: 2940x1780
+[GLX 2025/09/22 14:20:51] GLX uiSize: 1470.0x890.0
+[GLX 2025/09/22 14:20:51] GLX cursorScale: 1.0x1.0
+[GLX 2025/09/22 14:20:51] Using BGFX renderer: Metal
+[GLX 2025/09/22 14:20:51] Starting LX Engine...
+[LX 2025/09/22 14:20:51] LXEngine.ExecutorService starting...
+[GLX 2025/09/22 14:20:51] Bootstrap complete, running main loop.
+[LX 2025/09/22 14:20:51] Opening project file: /Users/ben/Chromatik/Projects/Blinkydome2025_asdf.lxp
+[LX 2025/09/22 14:20:51] Started audio input thread: Default Audio Device
+[LX 2025/09/22 14:20:55] Started audio input thread: Evil Chicken Microphone
+[GLX 2025/09/22 14:20:55] Stopping LX engine...
+[LX 2025/09/22 14:20:56] Project loaded successfully from /Users/ben/Chromatik/Projects/Blinkydome2025_asdf.lxp
+[LX 2025/09/22 14:20:56] [I/O] Network output is disabled due to license restrictions.
+[LX 2025/09/22 14:20:56] LXEngine.ExecutorService has finished.
+[LX 2025/09/22 14:20:56] [MIDI] LXMidiEngine Device Update Thread finished.
+[GLX 2025/09/22 14:20:56] Done with main thread, GLX shutdown complete. Thanks for playing. <3
