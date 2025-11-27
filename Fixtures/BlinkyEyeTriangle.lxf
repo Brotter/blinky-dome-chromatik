@@ -1,20 +1,18 @@
 {
-	"label": "BlinkyEyeTriangle",
+	"label": "BlinkyEyeTriangle50",
 	"tag": "Triangle",
 	"parameters": {
-		"rotate": {
+		"NumPoints": {
 			"type": "int",
-			"default": 0,
-			"label": "Rotate",
-			"description": "Rotate degrees so the plug of the triangle is at this position"
-		}
+			"default": 100,
+			"label": "Edge Points",
+			"description": "Number of pixels per edge of the triangle"
+		}		
 	},
 	"transforms": [
-		{	"roll": "$rotate + 180" }, // rotate the triangle itself
-		{ 
-			// components list a triangle with an edge-length of 1, which is 0.
-			"scale": 0.5842
-		}
+		{   "numPoints": "$NumPoints"},
+		{   "spacing": "1 / $NumPoints"},
+
 	],
 	"components": [
 
@@ -27,8 +25,8 @@
 	     	"y": 0.57735,
 	     	"z": 0,
 			 	"roll": 300,
-	     	"spacing": 0.01,
-	     	"numPoints": 100
+	     	"spacing": "1/$NumPoints",
+	     	"numPoints": $NumPoints
 	   	 },
 	   	 {
 	     	"type": "strip",
@@ -36,8 +34,8 @@
 	     	"y": -0.2887,
 	     	"z": 0,
 	     	"roll": 180,
-	     	"spacing": 0.01,
-	     	"numPoints": 100
+	     	"spacing": "1/$NumPoints",
+	     	"numPoints": $NumPoints
 	   	 },
 	   	 {
 	     	"type": "strip",
@@ -45,8 +43,8 @@
 	     	"y": -0.2887,
 	     	"z": 0,
 	     	"roll": 60,
-	     	"spacing": 0.01,
-	     	"numPoints": 100
+	     	"spacing": "1/$NumPoints",
+	     	"numPoints": $NumPoints
 	   	 }		
 	]
 }

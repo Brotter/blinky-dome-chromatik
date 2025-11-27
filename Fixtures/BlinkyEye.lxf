@@ -1,0 +1,65 @@
+{
+	"label": "BlinkyEye",
+	"tag": "BlinkyEye",
+	"parameters": {
+		"NumPoints": {
+			"type": "int",
+			"default": 100,
+			"label": "Edge Points",
+			"description": "Number of pixels per edge of the triangle"
+		}		
+	},
+	"transforms": [
+		{   "numPoints": "$NumPoints"},
+		{   "spacing": "1 / $NumPoints"},
+		{ 
+			// components list a triangle with an edge-length of 1, which is 0.
+			"scale": 0.5842
+		}
+	],	
+	"components": [
+
+
+			// use this for high-res
+
+	    {
+	     	"type": "BlinkyEyeTriangle",
+	     	"x": 0.0,
+	     	"y": 0.0,
+	     	"z": 0,
+			"roll": 0,
+			"NumPoints": $NumPoints
+	   	 },
+		 
+	    {
+	     	"type": "BlinkyEyeTriangle",
+	     	"x": 0.0,
+	     	"y": 0.0,
+	     	"z": 0,
+			"roll": 90,
+			"NumPoints": $NumPoints
+
+	   	 },
+		 
+	    {
+	     	"type": "BlinkyEyeTriangle",
+	     	"x": 0.0,
+	     	"y": 0.0,
+	     	"z": 0,
+			"roll": 180,
+			"NumPoints": $NumPoints
+
+	   	 },
+		 
+	    {
+	     	"type": "BlinkyEyeTriangle",
+	     	"x": 0.0,
+	     	"y": 0.0,
+	     	"z": 0,
+			"roll": 270,
+			"NumPoints": $NumPoints
+
+	   	 }
+		
+	]
+}
