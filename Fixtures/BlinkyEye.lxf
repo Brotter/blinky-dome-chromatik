@@ -36,6 +36,54 @@
 	     	"x": 0.0,
 	     	"y": 0.0,
 	     	"z": 0,
+			"roll": 15,
+			"NumPoints": $NumPoints
+
+	   	 },
+		 
+	    {
+	     	"type": "BlinkyEyeTriangle",
+	     	"x": 0.0,
+	     	"y": 0.0,
+	     	"z": 0,
+			"roll": 30,
+			"NumPoints": $NumPoints
+
+	   	 },
+		 
+	    {
+	     	"type": "BlinkyEyeTriangle",
+	     	"x": 0.0,
+	     	"y": 0.0,
+	     	"z": 0,
+			"roll": 45,
+			"NumPoints": $NumPoints
+
+	   	 },
+	    {
+	     	"type": "BlinkyEyeTriangle",
+	     	"x": 0.0,
+	     	"y": 0.0,
+	     	"z": 0,
+			"roll": 60,
+			"NumPoints": $NumPoints
+	   	 },
+		 
+	    {
+	     	"type": "BlinkyEyeTriangle",
+	     	"x": 0.0,
+	     	"y": 0.0,
+	     	"z": 0,
+			"roll": 75,
+			"NumPoints": $NumPoints
+
+	   	 },
+		 
+	    {
+	     	"type": "BlinkyEyeTriangle",
+	     	"x": 0.0,
+	     	"y": 0.0,
+	     	"z": 0,
 			"roll": 90,
 			"NumPoints": $NumPoints
 
@@ -46,20 +94,10 @@
 	     	"x": 0.0,
 	     	"y": 0.0,
 	     	"z": 0,
-			"roll": 180,
+			"roll": 105,
 			"NumPoints": $NumPoints
 
-	   	 },
-		 
-	    {
-	     	"type": "BlinkyEyeTriangle",
-	     	"x": 0.0,
-	     	"y": 0.0,
-	     	"z": 0,
-			"roll": 270,
-			"NumPoints": $NumPoints
-
-	   	 }
+	   	 }		 
 		
 	]
 }
