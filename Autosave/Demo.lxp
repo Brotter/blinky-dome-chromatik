@@ -1,0 +1,165 @@
+{
+  "version": "1.2.0",
+  "timestamp": 1771460838343,
+  "model": {
+    "id": 2,
+    "class": "heronarts.lx.structure.LXStructure",
+    "internal": {
+      "modulationColor": 0,
+      "modulationControlsExpanded": true,
+      "modulationsExpanded": true,
+      "showNormalizationBounds": true,
+      "showFixtureLabels": false,
+      "fixtureLabelHorizontalAlignment": 1,
+      "fixtureLabelHorizontalAlignment/name": "CENTER",
+      "fixtureLabelVerticalAlignment": 1,
+      "fixtureLabelVerticalAlignment/name": "MIDDLE",
+      "fixtureLabelPositionX": 0,
+      "fixtureLabelPositionX/name": "POSITION",
+      "fixtureLabelPositionY": 0,
+      "fixtureLabelPositionY/name": "POSITION",
+      "fixtureLabelPositionZ": 0,
+      "fixtureLabelPositionZ/name": "POSITION",
+      "fixtureLabelOffsetX": 0.0,
+      "fixtureLabelOffsetY": 0.0,
+      "fixtureLabelOffsetZ": 0.0
+    },
+    "parameters": {
+      "label": "LX",
+      "syncModelFile": false,
+      "allWhite": false,
+      "mute": false,
+      "normalizationMode": 0,
+      "normalizationMode/name": "AUTOMATIC",
+      "normalizationX": 250.0,
+      "normalizationY": 500.0,
+      "normalizationZ": 500.0,
+      "normalizationWidth": 1000.0,
+      "normalizationHeight": 1000.0,
+      "normalizationDepth": 1000.0
+    },
+    "children": {
+      "views": {
+        "id": 3,
+        "class": "heronarts.lx.structure.view.LXViewEngine",
+        "internal": {
+          "modulationColor": 0,
+          "modulationControlsExpanded": true,
+          "modulationsExpanded": true
+        },
+        "parameters": {
+          "label": "LX"
+        },
+        "children": {},
+        "views": []
+      }
+    },
+    "output": {
+      "id": 4,
+      "class": "heronarts.lx.structure.LXStructureOutput",
+      "internal": {
+        "modulationColor": 0,
+        "modulationControlsExpanded": true,
+        "modulationsExpanded": true
+      },
+      "parameters": {
+        "label": "Output",
+        "enabled": true,
+        "brightness": 1.0,
+        "fps": 0.0,
+        "gamma": 1.0,
+        "gammaMode": 1,
+        "gammaMode/name": "DIRECT",
+        "whitePointRed": 255,
+        "whitePointGreen": 255,
+        "whitePointBlue": 255,
+        "whitePointWhite": 255
+      },
+      "children": {}
+    },
+    "fixtures": [
+      {
+        "id": 47048,
+        "class": "heronarts.lx.structure.GridFixture",
+        "internal": {
+          "modulationColor": 0,
+          "modulationControlsExpanded": true,
+          "modulationsExpanded": true
+        },
+        "parameters": {
+          "label": "Grid 1",
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "yaw": 0.0,
+          "pitch": 0.0,
+          "roll": 0.0,
+          "scale": 1.0,
+          "hasCustomPointSize": false,
+          "pointSize": 5.0,
+          "selected": false,
+          "deactivate": false,
+          "enabled": false,
+          "brightness": 1.0,
+          "identify": false,
+          "mute": false,
+          "solo": false,
+          "tags": "grid",
+          "protocol": 0,
+          "protocol/name": "NONE",
+          "byteOrder": 0,
+          "byteOrder/name": "RGB",
+          "transport": 0,
+          "transport/name": "UDP",
+          "reverse": false,
+          "host": "127.0.0.1",
+          "port": 7890,
+          "dmxChannel": 0,
+          "artNetUniverse": 0,
+          "artNetSequenceEnabled": false,
+          "sacnPriority": 100,
+          "opcChannel": 0,
+          "opcOffset": 0,
+          "ddpDataOffset": 0,
+          "kinetPort": 1,
+          "kinetVersion": 1,
+          "kinetVersion/name": "PORTOUT",
+          "numRows": 20,
+          "numColumns": 20,
+          "rowSpacing": 10.0,
+          "columnSpacing": 10.0,
+          "positionMode": 0,
+          "positionMode/name": "CORNER",
+          "wiring": 0,
+          "wiring/name": "ROWS_L2R_B2T",
+          "rowTags": "row",
+          "columnTags": "column"
+        },
+        "children": {}
+      },
+      {
+        "id": 47053,
+        "class": "heronarts.lx.structure.GridFixture",
+        "internal": {
+          "modulationColor": 0,
+          "modulationControlsExpanded": true,
+          "modulationsExpanded": true
+        },
+        "parameters": {
+          "label": "Grid 2",
+          "x": 0.0,
+          "y": 0.0,
+          "z": 20.0,
+          "yaw": 0.0,
+          "pitch": 0.0,
+          "roll": 0.0,
+          "scale": 1.0,
+          "hasCustomPointSize": false,
+          "pointSize": 5.0,
+          "selected": false,
+          "deactivate": false,
+          "enabled": false,
+          "brightness": 1.0,
+          "identify": false,
+          "mute": false,
+    

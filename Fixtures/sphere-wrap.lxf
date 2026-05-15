@@ -1,0 +1,102 @@
+{
+  "label": "Sphere Wrap",
+  "tag": "sphere",
+
+  "parameters": {
+    "radius": {
+      "type": "float", "min": 1, "max": 5000, "default": 100,
+      "label": "Radius", "description": "Sphere radius"
+    },
+    "numPoints": {
+      "type": "int", "min": 2, "max": 5000, "default": 300,
+      "label": "Num Points", "description": "Total LEDs wrapped around the sphere"
+    },
+    "numTurns": {
+      "type": "float", "min": 0.5, "max": 200, "default": 12,
+      "label": "Num Turns", "description": "Helical turns from bottom rim to top pole"
+    },
+    "baseCut": {
+      "type": "float", "min": 0, "max": 5000, "default": 10,
+      "label": "Base Cut", "description": "Vertical distance sliced off the flat bottom (0 = full sphere, R = bottom hemisphere removed, 2R = nothing left)"
+    },
+
+    "outputEnabled": {
+      "type": "boolean", "default": true,
+      "label": "Output", "description": "Enable network output for this fixture"
+    },
+    "protocol": {
+      "type": "string", "default": "ddp",
+      "options": ["artnet", "artsync", "sacn", "ddp", "opc", "kinet"],
+      "label": "Protocol", "description": "Output protocol"
+    },
+    "host": {
+      "type": "string", "default": "0.0.0.0",
+      "label": "Host", "description": "Destination IP address or hostname"
+    },
+    "universe": {
+      "type": "int", "min": 0, "max": 32767, "default": 0,
+      "label": "Universe", "description": "ArtNet / sACN universe (ignored for other protocols)"
+    },
+    "channel": {
+      "type": "int", "min": 0, "max": 511, "default": 0,
+      "label": "Channel", "description": "DMX channel offset within the universe (ArtNet / sACN)"
+    },
+    "dataOffset": {
+      "type": "int", "min": 0, "max": 1000000, "default": 0,
+      "label": "Data Offset", "description": "Byte offset into the destination buffer (DDP / OPC)"
+    },
+    "byteOrder": {
+      "type": "string", "default": "rgb",
+      "options": [
+        "rgb", "rbg", "grb", "gbr", "brg", "bgr",
+        "rgbw", "rbgw", "grbw", "gbrw", "brgw", "bgrw",
+        "wrgb", "wrbg", "wgrb", "wgbr", "wbrg", "wbgr"
+      ],
+      "label": "Byte Order", "description": "Per-pixel byte order on the wire"
+    },
+    "reverse": {
+      "type": "boolean", "default": false,
+      "label": "Reverse", "description": "Send pixels in reverse order (top-to-bottom instead of bottom-to-top)"
+    },
+    "sequenceEnabled": {
+      "type": "boolean", "default": false,
+      "label": "ArtNet Sequence", "description": "Include sequence numbers in ArtNet packets"
+    }
+  },
+
+  /* Each LED is one instance of a 1-point strip placed at its helical
+     position. $instance runs 0..numPoints-1 so t = $instance/($numPoints-1)
+     is 0 at the bottom rim and 1 at the top pole. y is linear in t;
+     r(y) = sqrt(R^2 - y^2) gives the sphere radius at that height;
+     theta wraps numTurns full turns from bottom to top. */
+
+  "components": [
+    {
+      "type": "strip",
+      "tag": "wrap",
+      "instances": "$numPoints",
+      "numPoints": 1,
+      "spacing": 1,
+
+      "y": "-$radius + $baseCut + ($instance / ($numPoints - 1)) * (2*$radius - $baseCut)",
+
+      "x": "sqrt($radius*$radius - (-$radius + $baseCut + ($instance / ($numPoints - 1)) * (2*$radius - $baseCut)) * (-$radius + $baseCut + ($instance / ($numPoints - 1)) * (2*$radius - $baseCut))) * cos(360 * $numTurns * ($instance / ($numPoints - 1)))",
+
+      "z": "sqrt($radius*$radius - (-$radius + $baseCut + ($instance / ($numPoints - 1)) * (2*$radius - $baseCut)) * (-$radius + $baseCut + ($instance / ($numPoints - 1)) * (2*$radius - $baseCut))) * sin(360 * $numTurns * ($instance / ($numPoints - 1)))"
+    }
+  ],
+
+  "outputs": [
+    {
+      "enabled": "$outputEnabled",
+      "protocol": "$protocol",
+      "host": "$host",
+      "byteOrder": "$byteOrder",
+      "universe": "$universe",
+      "channel": "$channel",
+      "dataOffset": "$dataOffset",
+      "reverse": "$reverse",
+      "sequenceEnabled": "$sequenceEnabled"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+	"label": "BlinkyDome",
+	"tag": "Dome",
+	"components": [
+
+			// use this for high-res
+
+	    {
+	     	"type": "BlinkyH0",
+            "label": "Astra 1",
+            "ip": 11,
+            "port": 1,
+	     	"x": 0.0,
+	     	"y": 0.0,
+	     	"z": 0.0,
+			"roll": 0.0
+	   	 },
+
+	    {
+	     	"type": "BlinkyH1",
+            "label": "Astra 2",
+            "ip": 11,
+            "port": 2,
+	     	"x": 0.0,
+	     	"y": 0.0,
+	     	"z": 0.0,
+			"roll": 0.0
+	   	 },
+	    {
+	     	"type": "BlinkyH2",
+            "label": "Astra 3",
+            "ip": 11,
+            "port": 3,
+	     	"x": 0.0,
+	     	"y": 0.0,
+	     	"z": 0.0,
+			"roll": 0.0
+	   	 },
+
+	    {
+	     	"type": "BlinkyH3",
+            "label": "Astra 4",
+            "ip": 11,
+            "port": 4,
+	     	"x": 0.0,
+	     	"y": 0.0,
+	     	"z": 0.0,
+			"roll": 0.0
+	   	 }    
+
+    ]
+}

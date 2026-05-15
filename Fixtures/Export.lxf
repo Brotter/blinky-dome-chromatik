@@ -1,0 +1,286 @@
+{
+  "label": "Export",
+  "parameters": {
+    "output01": {
+      "label": "String A On",
+      "type": "boolean",
+      "default": true,
+      "description": "Whether output to String A is enabled"
+    },
+    "host01": {
+      "label": "String A Host",
+      "type": "string",
+      "default": "192.168.1.50",
+      "description": "Output host for String A"
+    },
+    "output02": {
+      "label": "String A On",
+      "type": "boolean",
+      "default": true,
+      "description": "Whether output to String A is enabled"
+    },
+    "host02": {
+      "label": "String A Host",
+      "type": "string",
+      "default": "192.168.1.50",
+      "description": "Output host for String A"
+    },
+    "output03": {
+      "label": "String A On",
+      "type": "boolean",
+      "default": true,
+      "description": "Whether output to String A is enabled"
+    },
+    "host03": {
+      "label": "String A Host",
+      "type": "string",
+      "default": "192.168.1.50",
+      "description": "Output host for String A"
+    },
+    "output04": {
+      "label": "String A On",
+      "type": "boolean",
+      "default": true,
+      "description": "Whether output to String A is enabled"
+    },
+    "host04": {
+      "label": "String A Host",
+      "type": "string",
+      "default": "192.168.1.50",
+      "description": "Output host for String A"
+    },
+    "output05": {
+      "label": "String A On",
+      "type": "boolean",
+      "default": true,
+      "description": "Whether output to String A is enabled"
+    },
+    "host05": {
+      "label": "String A Host",
+      "type": "string",
+      "default": "192.168.1.50",
+      "description": "Output host for String A"
+    },
+    "output06": {
+      "label": "String A On",
+      "type": "boolean",
+      "default": true,
+      "description": "Whether output to String A is enabled"
+    },
+    "host06": {
+      "label": "String A Host",
+      "type": "string",
+      "default": "192.168.1.50",
+      "description": "Output host for String A"
+    },
+    "output07": {
+      "label": "String A On",
+      "type": "boolean",
+      "default": true,
+      "description": "Whether output to String A is enabled"
+    },
+    "host07": {
+      "label": "String A Host",
+      "type": "string",
+      "default": "192.168.1.50",
+      "description": "Output host for String A"
+    }
+  },
+  "components": [
+    {
+      "label": "String A",
+      "tags": [
+        "strip",
+        "arc"
+      ],
+      "type": "arc",
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0,
+      "roll": 0.0,
+      "numPoints": 43,
+      "radius": 10.0,
+      "degrees": 102.0,
+      "mode": "center",
+      "output": {
+        "enabled": "$output01",
+        "host": "$host01",
+        "byteOrder": "rgb",
+        "protocol": "artnet",
+        "universe": 1,
+        "channel": 0,
+        "sequenceEnabled": false
+      }
+    },
+    {
+      "label": "String A",
+      "tags": [
+        "strip",
+        "arc"
+      ],
+      "type": "arc",
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0,
+      "roll": 103.0,
+      "numPoints": 43,
+      "radius": 10.0,
+      "degrees": 102.0,
+      "mode": "center",
+      "output": {
+        "enabled": "$output02",
+        "host": "$host02",
+        "byteOrder": "rgb",
+        "reverse": true,
+        "protocol": "artnet",
+        "universe": 1,
+        "channel": 132,
+        "sequenceEnabled": false
+      }
+    },
+    {
+      "label": "String A",
+      "tags": [
+        "strip",
+        "arc"
+      ],
+      "type": "arc",
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0,
+      "roll": 206.0,
+      "numPoints": 43,
+      "radius": 10.0,
+      "degrees": 102.0,
+      "mode": "center",
+      "output": {
+        "enabled": "$output03",
+        "host": "$host03",
+        "byteOrder": "rgb",
+        "reverse": true,
+        "protocol": "artnet",
+        "universe": 1,
+        "channel": 261,
+        "sequenceEnabled": false
+      }
+    },
+    {
+      "label": "String A",
+      "tags": [
+        "strip",
+        "arc"
+      ],
+      "type": "arc",
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0,
+      "roll": 306.0,
+      "numPoints": 43,
+      "radius": 10.0,
+      "degrees": 102.0,
+      "mode": "center",
+      "output": {
+        "enabled": "$output04",
+        "host": "$host04",
+        "byteOrder": "rgb",
+        "reverse": true,
+        "protocol": "artnet",
+        "universe": 1,
+        "channel": 390,
+        "sequenceEnabled": false
+      }
+    },
+    {
+      "label": "String A",
+      "tags": [
+        "strip",
+        "arc"
+      ],
+      "type": "arc",
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0,
+      "roll": 52.0,
+      "numPoints": 43,
+      "radius": 10.0,
+      "degrees": 102.0,
+      "mode": "center",
+      "output": {
+        "enabled": "$output05",
+        "host": "$host05",
+        "byteOrder": "rgb",
+        "reverse": true,
+        "protocol": "artnet",
+        "universe": 2,
+        "channel": 9,
+        "sequenceEnabled": false
+      }
+    },
+    {
+      "label": "String A",
+      "tags": [
+        "strip",
+        "arc"
+      ],
+      "type": "arc",
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0,
+      "roll": 155.0,
+      "numPoints": 43,
+      "radius": 10.0,
+      "degrees": 102.0,
+      "mode": "center",
+      "output": {
+        "enabled": "$output06",
+        "host": "$host06",
+        "byteOrder": "rgb",
+        "reverse": true,
+        "protocol": "artnet",
+        "universe": 2,
+        "channel": 138,
+        "sequenceEnabled": false
+      }
+    },
+    {
+      "label": "String A",
+      "tags": [
+        "strip",
+        "arc"
+      ],
+      "type": "arc",
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0,
+      "roll": 258.0,
+      "numPoints": 43,
+      "radius": 10.0,
+      "degrees": 102.0,
+      "mode": "center",
+      "output": {
+        "enabled": "$output07",
+        "host": "$host07",
+        "byteOrder": "rgb",
+        "reverse": true,
+        "protocol": "artnet",
+        "universe": 2,
+        "channel": 261,
+        "sequenceEnabled": false
+      }
+    }
+  ]
+}

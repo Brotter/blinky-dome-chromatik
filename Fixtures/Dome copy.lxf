@@ -1,0 +1,232 @@
+{
+	"label": "BlinkyDome",
+	"tag": "Dome",
+	"components": [
+
+			// use this for high-res
+
+	    {
+	     	"type": "BlinkyH0",
+            "label": "Astra 1",
+            "ip": 11,
+            "port": 1,
+	     	"x": 0.0,
+	     	"y": 0.0,
+	     	"z": 0.0,
+			"roll": 0.0
+	   	 },
+
+	    {
+	     	"type": "BlinkyH1",
+            "label": "Astra 2",
+            "ip": 11,
+            "port": 2,
+	     	"x": 0.0,
+	     	"y": 0.0,
+	     	"z": 0.0,
+			"roll": 0.0
+	   	 },
+	    {
+	     	"type": "BlinkyH2",
+            "label": "Astra 3",
+            "ip": 11,
+            "port": 3,
+	     	"x": 0.0,
+	     	"y": 0.0,
+	     	"z": 0.0,
+			"roll": 0.0
+	   	 },
+
+	    {
+	     	"type": "BlinkyH3",
+            "label": "Astra 4",
+            "ip": 11,
+            "port": 4,
+	     	"x": 0.0,
+	     	"y": 0.0,
+	     	"z": 0.0,
+			"roll": 0.0
+	   	 },
+
+
+        {
+	     	"type": "BlinkyH0",
+            "label": "Dorsa 1",
+            "ip": 12,
+            "port": 1,
+	     	"x": 0.0,
+	     	"y": 0.0,
+	     	"z": 0.0,
+			"yaw": 72.0
+	   	 },
+
+	    {
+	     	"type": "BlinkyH1",
+            "label": "Dorsa 2",
+            "ip": 12,
+            "port": 2,
+	     	"x": 0.0,
+	     	"y": 0.0,
+	     	"z": 0.0,
+			"yaw": 72.0
+	   	 },
+	    {
+	     	"type": "BlinkyH2",
+            "label": "Dorsa 3",
+            "ip": 12,
+            "port": 3,
+	     	"x": 0.0,
+	     	"y": 0.0,
+	     	"z": 0.0,
+			"yaw": 72.0
+	   	 },
+
+	    {
+	     	"type": "BlinkyH3",
+            "label": "Dorsa 4",
+            "ip": 12,
+            "port": 4,
+	     	"x": 0.0,
+	     	"y": 0.0,
+	     	"z": 0.0,
+			"yaw": 72.0
+	   	 },
+
+
+         
+
+        {
+	     	"type": "BlinkyH0",
+            "label": "Plana 1",
+            "ip": 13,
+            "port": 1,
+	     	"x": 0.0,
+	     	"y": 0.0,
+	     	"z": 0.0,
+			"yaw": 144
+	   	 },
+
+	    {
+	     	"type": "BlinkyH1",
+            "label": "Plana 2",
+            "ip": 13,
+            "port": 2,
+	     	"x": 0.0,
+	     	"y": 0.0,
+	     	"z": 0.0,
+			"yaw": 144
+	   	 },
+	    {
+	     	"type": "BlinkyH2",
+            "label": "Plana 3",
+            "ip": 13,
+            "port": 3,
+	     	"x": 0.0,
+	     	"y": 0.0,
+	     	"z": 0.0,
+			"yaw": 144
+	   	 },
+
+	    {
+	     	"type": "BlinkyH3",
+            "label": "Plana 4",
+            "ip": 13,
+            "port": 4,
+	     	"x": 0.0,
+	     	"y": 0.0,
+	     	"z": 0.0,
+			"yaw": 144
+	   	 },
+
+          
+
+        {
+	     	"type": "BlinkyH0",
+            "label": "Undae 1",
+            "ip": 14,
+            "port": 1,
+	     	"x": 0.0,
+	     	"y": 0.0,
+	     	"z": 0.0,
+			"yaw": 216
+	   	 },
+
+	    {
+	     	"type": "BlinkyH1",
+            "label": "Undae 2",
+            "ip": 14,
+            "port": 2,
+	     	"x": 0.0,
+	     	"y": 0.0,
+	     	"z": 0.0,
+			"yaw": 216
+	   	 },
+	    {
+	     	"type": "BlinkyH2",
+            "label": "Undae 3",
+            "ip": 14,
+            "port": 3,
+	     	"x": 0.0,
+	     	"y": 0.0,
+	     	"z": 0.0,
+			"yaw": 216
+	   	 },
+
+	    {
+	     	"type": "BlinkyH3",
+            "label": "Undae 4",
+            "ip": 14,
+            "port": 4,
+	     	"x": 0.0,
+	     	"y": 0.0,
+	     	"z": 0.0,
+			"yaw": 216
+	   	 },
+
+                   
+
+        {
+	     	"type": "BlinkyH0",
+            "label": "Tholi 1",
+            "ip": 15,
+            "port": 1,
+	     	"x": 0.0,
+	     	"y": 0.0,
+	     	"z": 0.0,
+			"yaw": 288
+	   	 },
+
+	    {
+	     	"type": "BlinkyH1",
+            "label": "Tholi 2",
+            "ip": 15,
+            "port": 2,
+	     	"x": 0.0,
+	     	"y": 0.0,
+	     	"z": 0.0,
+			"yaw": 288
+	   	 },
+	    {
+	     	"type": "BlinkyH2",
+            "label": "Tholi 3",
+            "ip": 15,
+            "port": 3,
+	     	"x": 0.0,
+	     	"y": 0.0,
+	     	"z": 0.0,
+			"yaw": 288
+	   	 },
+
+	    {
+	     	"type": "BlinkyH3",
+            "label": "Tholi 4",
+            "ip": 15,
+            "port": 4,
+	     	"x": 0.0,
+	     	"y": 0.0,
+	     	"z": 0.0,
+			"yaw": 288
+	   	 }                 
+
+    ]
+}
