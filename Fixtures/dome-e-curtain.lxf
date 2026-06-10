@@ -1,0 +1,153 @@
+{
+  "label": "Dome E-Ring Curtain",
+  "tag": "dome",
+
+  "parameters": {
+    "domeRadius": {
+      "type": "float", "min": 0.1, "max": 1000, "default": 4.8768,
+      "label": "Dome Radius", "description": "Radius of the V4 geodesic dome (m). Default 4.8768 m = 16 ft, matching dome_strips.lxf"
+    },
+    "strandSpacing": {
+      "type": "float", "min": 0.01, "max": 100, "default": 0.0982,
+      "label": "Strand Spacing", "description": "Distance between adjacent strands along the great circle (arc length, m). Default 0.0982 m spans ~45 deg of the ring with 40 strands"
+    },
+    "arrayCenterDeg": {
+      "type": "float", "min": -180, "max": 180, "default": 0,
+      "label": "Array Center", "description": "Angle along the great circle where the 40-strand array is centered. 0 = top of the ring (highest point); negative/positive slides the array along the great circle toward the equator"
+    },
+    "strandLengthLong": {
+      "type": "float", "min": 0.1, "max": 100, "default": 6,
+      "label": "Long Strand Length", "description": "Length of the outer (long) strands (m) - 10 on each end"
+    },
+    "strandLengthShort": {
+      "type": "float", "min": 0.1, "max": 100, "default": 5.25,
+      "label": "Short Strand Length", "description": "Length of the inner (short) strands (m) - 20 in the middle"
+    },
+    "pixelsPerStrand": {
+      "type": "int", "min": 2, "max": 2000, "default": 100,
+      "label": "Pixels per Strand", "description": "LEDs on each strand"
+    },
+
+    "outputEnabled": {
+      "type": "boolean", "default": true,
+      "label": "Output", "description": "Enable network output for this fixture"
+    },
+    "protocol": {
+      "type": "string", "default": "ddp",
+      "options": ["artnet", "artsync", "sacn", "ddp", "opc", "kinet"],
+      "label": "Protocol", "description": "Output protocol"
+    },
+    "host": {
+      "type": "string", "default": "0.0.0.0",
+      "label": "Host", "description": "Destination IP address or hostname"
+    },
+    "universe": {
+      "type": "int", "min": 0, "max": 32767, "default": 0,
+      "label": "Universe", "description": "ArtNet / sACN universe"
+    },
+    "channel": {
+      "type": "int", "min": 0, "max": 511, "default": 0,
+      "label": "Channel", "description": "DMX channel offset within the universe"
+    },
+    "dataOffset": {
+      "type": "int", "min": 0, "max": 1000000, "default": 0,
+      "label": "Data Offset", "description": "Byte offset into the destination buffer (DDP / OPC)"
+    },
+    "byteOrder": {
+      "type": "string", "default": "rgb",
+      "options": [
+        "rgb", "rbg", "grb", "gbr", "brg", "bgr",
+        "rgbw", "rbgw", "grbw", "gbrw", "brgw", "bgrw",
+        "wrgb", "wrbg", "wgrb", "wgbr", "wbrg", "wbgr"
+      ],
+      "label": "Byte Order", "description": "Per-pixel byte order on the wire"
+    },
+    "reverse": {
+      "type": "boolean", "default": false,
+      "label": "Reverse", "description": "Send pixels in reverse order"
+    },
+    "sequenceEnabled": {
+      "type": "boolean", "default": false,
+      "label": "ArtNet Sequence", "description": "Include sequence numbers in ArtNet packets"
+    }
+  },
+
+  /* The V4 icosahedral dome (vertex-up orientation, apex = 5-A-strut hub at
+     (0, R, 0)) contains six great circles each made entirely of E struts.
+     One is the equator (y=0); the other five are tilted, each perpendicular
+     to one of the five upper-pentagon icosahedron-vertex axes. We use one
+     of those tilted rings here.
+
+     The ring we use has plane normal (-2, -1, 0)/sqrt(5). Its highest point
+     in the dome sits at:
+         top = R * (-1, 2, 0)/sqrt(5) = (-0.4472 R, 0.8944 R, 0)
+     i.e. y = 2 R / sqrt(5) ~= 0.894 R. At R = 4.8768 m that's about 4.36 m
+     off the dome base, leaving room for the strands to hang.
+
+     The ring lies in a plane that contains the Z axis. Parametrize position
+     by angle theta measured from the top of the ring:
+         x(theta) = -R/sqrt(5) * cos(theta)
+         y(theta) =  2R/sqrt(5) * cos(theta)
+         z(theta) =  R           * sin(theta)
+     theta = 0 -> top of ring; theta = ±90 deg -> the great circle's
+     intersection with the equator on either side.
+
+     40 strands hang straight down (-Y) from arc points along this ring.
+     Arc index k (0..39) maps to angle:
+         theta_deg = arrayCenterDeg
+                   + (k - 19.5) * strandSpacing / domeRadius * (180/pi)
+     so the array is centred on theta = arrayCenterDeg (default 0 = top).
+
+     Layout along the array:
+         k =  0..9   long strands  (outer)
+         k = 10..29  short strands (middle)
+         k = 30..39  long strands  (outer)
+
+     Constants:
+         1/sqrt(5) = 0.4472135954999579
+         2/sqrt(5) = 0.8944271909999159
+         180/pi    = 57.29577951308232
+
+     To use a different one of the five tilted E rings (they are 72 deg
+     rotations of this one around Y), or to flip handedness, rotate the
+     whole fixture in Chromatik's structure view. */
+
+  "components": [
+    {
+      "type": "strip",
+      "tag": "long",
+      "instances": 20,
+      "numPoints": "$pixelsPerStrand",
+      "spacing": "$strandLengthLong / ($pixelsPerStrand - 1)",
+      "roll": -90,
+      "x": "-0.4472135954999579 * $domeRadius * cos($arrayCenterDeg + (((($instance < 10) ? $instance : ($instance + 20)) - 19.5) * $strandSpacing / $domeRadius * 57.29577951308232))",
+      "y": "0.8944271909999159 * $domeRadius * cos($arrayCenterDeg + (((($instance < 10) ? $instance : ($instance + 20)) - 19.5) * $strandSpacing / $domeRadius * 57.29577951308232))",
+      "z": "$domeRadius * sin($arrayCenterDeg + (((($instance < 10) ? $instance : ($instance + 20)) - 19.5) * $strandSpacing / $domeRadius * 57.29577951308232))"
+    },
+    {
+      "type": "strip",
+      "tag": "short",
+      "instances": 20,
+      "numPoints": "$pixelsPerStrand",
+      "spacing": "$strandLengthShort / ($pixelsPerStrand - 1)",
+      "roll": -90,
+      "x": "-0.4472135954999579 * $domeRadius * cos($arrayCenterDeg + (($instance - 9.5) * $strandSpacing / $domeRadius * 57.29577951308232))",
+      "y": "0.8944271909999159 * $domeRadius * cos($arrayCenterDeg + (($instance - 9.5) * $strandSpacing / $domeRadius * 57.29577951308232))",
+      "z": "$domeRadius * sin($arrayCenterDeg + (($instance - 9.5) * $strandSpacing / $domeRadius * 57.29577951308232))"
+    }
+  ],
+
+  "outputs": [
+    {
+      "enabled": "$outputEnabled",
+      "protocol": "$protocol",
+      "host": "$host",
+      "byteOrder": "$byteOrder",
+      "universe": "$universe",
+      "channel": "$channel",
+      "dataOffset": "$dataOffset",
+      "reverse": "$reverse",
+      "sequenceEnabled": "$sequenceEnabled"
+    }
+  ]
+}

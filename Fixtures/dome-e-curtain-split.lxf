@@ -1,0 +1,160 @@
+{
+  "label": "Dome E-Ring Curtain (Split)",
+  "tag": "dome",
+
+  "parameters": {
+    "domeRadius": {
+      "type": "float", "min": 0.1, "max": 1000, "default": 4.8768,
+      "label": "Dome Radius", "description": "Radius of the V4 geodesic dome (m). Default 4.8768 m = 16 ft, matching dome_strips.lxf"
+    },
+    "strandSpacing": {
+      "type": "float", "min": 0.01, "max": 100, "default": 0.0982,
+      "label": "Strand Spacing", "description": "Distance between adjacent strands along the great circle (arc length, m). Total array spans (numInside + numOutside - 1) * spacing of the ring's arc"
+    },
+    "arrayCenterDeg": {
+      "type": "float", "min": -180, "max": 180, "default": 0,
+      "label": "Array Center", "description": "Angle along the great circle where the array is centered. 0 = top of the ring (highest point); +/- slides the array toward the equator"
+    },
+    "numInside": {
+      "type": "int", "min": 0, "max": 1000, "default": 20,
+      "label": "Inside Strands", "description": "Number of inside strands. They frame the array, split across the two ends (floor(n/2) on the left, the rest on the right)"
+    },
+    "numOutside": {
+      "type": "int", "min": 0, "max": 1000, "default": 20,
+      "label": "Outside Strands", "description": "Number of outside strands. They fill the middle of the array, between the two inside blocks"
+    },
+    "insideStrandLength": {
+      "type": "float", "min": 0.1, "max": 100, "default": 6,
+      "label": "Inside Strand Length", "description": "Length of the inside strands (m) - the ones framing the array ends"
+    },
+    "outsideStrandLength": {
+      "type": "float", "min": 0.1, "max": 100, "default": 5.25,
+      "label": "Outside Strand Length", "description": "Length of the outside strands (m) - the ones filling the middle"
+    },
+    "pixelsPerStrand": {
+      "type": "int", "min": 2, "max": 2000, "default": 100,
+      "label": "Pixels per Strand", "description": "LEDs on each strand"
+    },
+
+    "outputEnabled": {
+      "type": "boolean", "default": true,
+      "label": "Output", "description": "Enable network output for this fixture"
+    },
+    "protocol": {
+      "type": "string", "default": "ddp",
+      "options": ["artnet", "artsync", "sacn", "ddp", "opc", "kinet"],
+      "label": "Protocol", "description": "Output protocol"
+    },
+    "host": {
+      "type": "string", "default": "0.0.0.0",
+      "label": "Host", "description": "Destination IP address or hostname"
+    },
+    "universe": {
+      "type": "int", "min": 0, "max": 32767, "default": 0,
+      "label": "Universe", "description": "ArtNet / sACN universe"
+    },
+    "channel": {
+      "type": "int", "min": 0, "max": 511, "default": 0,
+      "label": "Channel", "description": "DMX channel offset within the universe"
+    },
+    "dataOffset": {
+      "type": "int", "min": 0, "max": 1000000, "default": 0,
+      "label": "Data Offset", "description": "Byte offset into the destination buffer (DDP / OPC)"
+    },
+    "byteOrder": {
+      "type": "string", "default": "rgb",
+      "options": [
+        "rgb", "rbg", "grb", "gbr", "brg", "bgr",
+        "rgbw", "rbgw", "grbw", "gbrw", "brgw", "bgrw",
+        "wrgb", "wrbg", "wgrb", "wgbr", "wbrg", "wbgr"
+      ],
+      "label": "Byte Order", "description": "Per-pixel byte order on the wire"
+    },
+    "reverse": {
+      "type": "boolean", "default": false,
+      "label": "Reverse", "description": "Send pixels in reverse order"
+    },
+    "sequenceEnabled": {
+      "type": "boolean", "default": false,
+      "label": "ArtNet Sequence", "description": "Include sequence numbers in ArtNet packets"
+    }
+  },
+
+  /* Same tilted E-strut great circle as dome-e-curtain.lxf. The V4
+     icosahedral dome (vertex-up, apex = 5-A-strut hub) has six all-E great
+     circles: the equator plus five tilted ones. We use the tilted ring with
+     plane normal (-2, -1, 0)/sqrt(5); its top sits at
+         R * (-1, 2, 0)/sqrt(5) = (-0.4472 R, 0.8944 R, 0)
+     i.e. y = 2 R / sqrt(5) ~= 0.894 R (~4.36 m at R = 4.8768 m).
+
+     Ring parametrized by angle theta from the top:
+         x(theta) = -R/sqrt(5) * cos(theta)
+         y(theta) =  2R/sqrt(5) * cos(theta)
+         z(theta) =  R          * sin(theta)
+
+     Difference from dome-e-curtain.lxf: the inside/outside split is now
+     configurable. Let N = numInside + numOutside and L = floor(numInside/2).
+
+       Array layout by arc index k (0..N-1):
+         k in [0, L-1]                inside  (left block,  L strands)
+         k in [L, L+numOutside-1]     outside (middle block)
+         k in [L+numOutside, N-1]     inside  (right block, numInside-L)
+
+       Inside component  (instances = numInside):
+         $instance <  L  ->  k = $instance
+         $instance >= L  ->  k = $instance + numOutside
+       Outside component (instances = numOutside):
+         k = $instance + L
+
+       theta_deg = arrayCenterDeg
+                 + (k - (N-1)/2) * strandSpacing / domeRadius * (180/pi)
+
+     Strands hang straight down (-Y) via roll = -90.
+
+     Constants: 1/sqrt(5)=0.4472135954999579, 2/sqrt(5)=0.8944271909999159,
+     180/pi=57.29577951308232.
+
+     Notes: numInside is split floor(n/2) left / ceil(n/2) right, so odd
+     counts put the extra strand on the right block. Either count may be 0.
+     Pick a different one of the five tilted rings (72 deg rotations) by
+     rotating the whole fixture in Chromatik's structure view. */
+
+  "components": [
+    {
+      "type": "strip",
+      "tag": "inside",
+      "instances": "$numInside",
+      "numPoints": "$pixelsPerStrand",
+      "spacing": "$insideStrandLength / ($pixelsPerStrand - 1)",
+      "roll": -90,
+      "x": "-0.4472135954999579 * $domeRadius * cos($arrayCenterDeg + ((($instance < floor($numInside / 2)) ? $instance : ($instance + $numOutside)) - ($numInside + $numOutside - 1) / 2) * $strandSpacing / $domeRadius * 57.29577951308232)",
+      "y": "0.8944271909999159 * $domeRadius * cos($arrayCenterDeg + ((($instance < floor($numInside / 2)) ? $instance : ($instance + $numOutside)) - ($numInside + $numOutside - 1) / 2) * $strandSpacing / $domeRadius * 57.29577951308232)",
+      "z": "$domeRadius * sin($arrayCenterDeg + ((($instance < floor($numInside / 2)) ? $instance : ($instance + $numOutside)) - ($numInside + $numOutside - 1) / 2) * $strandSpacing / $domeRadius * 57.29577951308232)"
+    },
+    {
+      "type": "strip",
+      "tag": "outside",
+      "instances": "$numOutside",
+      "numPoints": "$pixelsPerStrand",
+      "spacing": "$outsideStrandLength / ($pixelsPerStrand - 1)",
+      "roll": -90,
+      "x": "-0.4472135954999579 * $domeRadius * cos($arrayCenterDeg + (($instance + floor($numInside / 2)) - ($numInside + $numOutside - 1) / 2) * $strandSpacing / $domeRadius * 57.29577951308232)",
+      "y": "0.8944271909999159 * $domeRadius * cos($arrayCenterDeg + (($instance + floor($numInside / 2)) - ($numInside + $numOutside - 1) / 2) * $strandSpacing / $domeRadius * 57.29577951308232)",
+      "z": "$domeRadius * sin($arrayCenterDeg + (($instance + floor($numInside / 2)) - ($numInside + $numOutside - 1) / 2) * $strandSpacing / $domeRadius * 57.29577951308232)"
+    }
+  ],
+
+  "outputs": [
+    {
+      "enabled": "$outputEnabled",
+      "protocol": "$protocol",
+      "host": "$host",
+      "byteOrder": "$byteOrder",
+      "universe": "$universe",
+      "channel": "$channel",
+      "dataOffset": "$dataOffset",
+      "reverse": "$reverse",
+      "sequenceEnabled": "$sequenceEnabled"
+    }
+  ]
+}

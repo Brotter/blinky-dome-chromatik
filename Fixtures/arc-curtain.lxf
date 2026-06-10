@@ -1,0 +1,134 @@
+{
+  "label": "Arc Curtain",
+  "tag": "arch",
+
+  "parameters": {
+    "radius": {
+      "type": "float", "min": 0.1, "max": 1000, "default": 5,
+      "label": "Arc Radius", "description": "Radius of the overhead arc (m)"
+    },
+    "arcDegrees": {
+      "type": "float", "min": 1, "max": 359, "default": 90,
+      "label": "Arc Coverage", "description": "Total angular extent of the arc in degrees; the 40 strands fill it evenly"
+    },
+    "strandLengthLong": {
+      "type": "float", "min": 0.1, "max": 100, "default": 6,
+      "label": "Long Strand Length", "description": "Length of the outer (long) strands (m) — 10 on each end"
+    },
+    "strandLengthShort": {
+      "type": "float", "min": 0.1, "max": 100, "default": 5.25,
+      "label": "Short Strand Length", "description": "Length of the inner (short) strands (m) — 20 in the middle"
+    },
+    "pixelsPerStrand": {
+      "type": "int", "min": 2, "max": 2000, "default": 100,
+      "label": "Pixels per Strand", "description": "LEDs on each strand (same for long and short)"
+    },
+
+    "outputEnabled": {
+      "type": "boolean", "default": true,
+      "label": "Output", "description": "Enable network output for this fixture"
+    },
+    "protocol": {
+      "type": "string", "default": "ddp",
+      "options": ["artnet", "artsync", "sacn", "ddp", "opc", "kinet"],
+      "label": "Protocol", "description": "Output protocol"
+    },
+    "host": {
+      "type": "string", "default": "0.0.0.0",
+      "label": "Host", "description": "Destination IP address or hostname"
+    },
+    "universe": {
+      "type": "int", "min": 0, "max": 32767, "default": 0,
+      "label": "Universe", "description": "ArtNet / sACN universe (ignored for other protocols)"
+    },
+    "channel": {
+      "type": "int", "min": 0, "max": 511, "default": 0,
+      "label": "Channel", "description": "DMX channel offset within the universe (ArtNet / sACN)"
+    },
+    "dataOffset": {
+      "type": "int", "min": 0, "max": 1000000, "default": 0,
+      "label": "Data Offset", "description": "Byte offset into the destination buffer (DDP / OPC)"
+    },
+    "byteOrder": {
+      "type": "string", "default": "rgb",
+      "options": [
+        "rgb", "rbg", "grb", "gbr", "brg", "bgr",
+        "rgbw", "rbgw", "grbw", "gbrw", "brgw", "bgrw",
+        "wrgb", "wrbg", "wgrb", "wgbr", "wbrg", "wbgr"
+      ],
+      "label": "Byte Order", "description": "Per-pixel byte order on the wire"
+    },
+    "reverse": {
+      "type": "boolean", "default": false,
+      "label": "Reverse", "description": "Send pixels in reverse order"
+    },
+    "sequenceEnabled": {
+      "type": "boolean", "default": false,
+      "label": "ArtNet Sequence", "description": "Include sequence numbers in ArtNet packets"
+    }
+  },
+
+  /* 40 strands hang straight down (-Y) from an arc lying in the X-Y plane.
+     The top of the arc sits at the origin (0, 0, 0); the arc's circle
+     center is at (0, -radius, 0), so the arc curves up like a rainbow.
+
+     Arc index k (0..39) maps to angle theta_k (deg) from the top:
+        t = k / 39, theta_k = arcDegrees * (t - 0.5)
+        arc point = (R*sin(theta_k), R*(cos(theta_k) - 1), 0)
+
+     Layout along the arc (left -> right):
+        k =  0..9   long strands  (10 outer-left)
+        k = 10..29  short strands (20 middle)
+        k = 30..39  long strands  (10 outer-right)
+
+     Long-strand component (20 instances):
+        $instance 0..9  -> arc index = $instance
+        $instance 10..19 -> arc index = $instance + 20
+
+     Short-strand component (20 instances):
+        $instance 0..19 -> arc index = $instance + 10
+
+     Each strip uses roll = -90 so its local +X axis points along global -Y
+     (i.e., it hangs straight down). Strand length is captured by
+     spacing = strandLength / (pixelsPerStrand - 1), placing the first pixel
+     at the arc point and the last pixel exactly strandLength meters below. */
+
+  "components": [
+    {
+      "type": "strip",
+      "tag": "long",
+      "instances": 20,
+      "numPoints": "$pixelsPerStrand",
+      "spacing": "$strandLengthLong / ($pixelsPerStrand - 1)",
+      "roll": -90,
+      "x": "$radius * sin($arcDegrees * ((($instance < 10) ? $instance : ($instance + 20)) / 39 - 0.5))",
+      "y": "$radius * (cos($arcDegrees * ((($instance < 10) ? $instance : ($instance + 20)) / 39 - 0.5)) - 1)",
+      "z": 0
+    },
+    {
+      "type": "strip",
+      "tag": "short",
+      "instances": 20,
+      "numPoints": "$pixelsPerStrand",
+      "spacing": "$strandLengthShort / ($pixelsPerStrand - 1)",
+      "roll": -90,
+      "x": "$radius * sin($arcDegrees * (($instance + 10) / 39 - 0.5))",
+      "y": "$radius * (cos($arcDegrees * (($instance + 10) / 39 - 0.5)) - 1)",
+      "z": 0
+    }
+  ],
+
+  "outputs": [
+    {
+      "enabled": "$outputEnabled",
+      "protocol": "$protocol",
+      "host": "$host",
+      "byteOrder": "$byteOrder",
+      "universe": "$universe",
+      "channel": "$channel",
+      "dataOffset": "$dataOffset",
+      "reverse": "$reverse",
+      "sequenceEnabled": "$sequenceEnabled"
+    }
+  ]
+}
