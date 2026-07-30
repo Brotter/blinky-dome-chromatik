@@ -4,6 +4,26 @@
     "star-eye",
     "2d"
   ],
+  "parameters": {        
+    "ip": {
+        "label": "String A Host",
+        "type": "string",
+        "default": "192.168.1.50",
+        "description": "Output host for String A"
+        },
+    "Universe": {
+			"type": "int",
+			"default": 1,
+			"label": "Universe",
+			"description": "start universe"
+        },
+    "channel": {
+      "type": "int",
+      "default": 0,
+      "label": "Channel",
+      "description": "pixel offset"
+    }
+  },
   "metadata": {
     "source_svg": "star-eye.svg",
     "num_points": 300,
@@ -13,7 +33,16 @@
     {
       "type": "points",
       "label": "Star Eye outline",
-      "numPoints": 300,
+      "numPoints": 144,
+      "output": {
+        "host": "$ip",
+        "byteOrder": "rgb",
+        "reverse": false,
+        "protocol": "artnet",
+        "universe": "$Universe",
+        "channel": 0,
+        "sequenceEnabled": false
+            },
       "coords": [
         {
           "index": 0,
@@ -1747,72 +1776,6 @@
           "index": 288,
           "x": 19.173739,
           "y": 30.583612,
-          "z": 0.0
-        },
-        {
-          "index": 289,
-          "x": 20.017466,
-          "y": 30.091242,
-          "z": 0.0
-        },
-        {
-          "index": 290,
-          "x": 20.853624,
-          "y": 29.586124,
-          "z": 0.0
-        },
-        {
-          "index": 291,
-          "x": 21.682025,
-          "y": 29.068383,
-          "z": 0.0
-        },
-        {
-          "index": 292,
-          "x": 22.502486,
-          "y": 28.538148,
-          "z": 0.0
-        },
-        {
-          "index": 293,
-          "x": 23.314828,
-          "y": 27.995559,
-          "z": 0.0
-        },
-        {
-          "index": 294,
-          "x": 24.118882,
-          "y": 27.440759,
-          "z": 0.0
-        },
-        {
-          "index": 295,
-          "x": 24.914479,
-          "y": 26.8739,
-          "z": 0.0
-        },
-        {
-          "index": 296,
-          "x": 25.701462,
-          "y": 26.29514,
-          "z": 0.0
-        },
-        {
-          "index": 297,
-          "x": 26.479677,
-          "y": 25.704643,
-          "z": 0.0
-        },
-        {
-          "index": 298,
-          "x": 27.248977,
-          "y": 25.102579,
-          "z": 0.0
-        },
-        {
-          "index": 299,
-          "x": 28.009225,
-          "y": 24.489123,
           "z": 0.0
         }
       ]
