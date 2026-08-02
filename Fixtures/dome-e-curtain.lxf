@@ -2,6 +2,10 @@
   "label": "Dome E-Ring Curtain",
   "tag": "dome",
 
+  "meta": {
+    "maxChunks": 40
+  },
+
   "parameters": {
     "domeRadius": {
       "type": "float", "min": 0.1, "max": 1000, "default": 4.8768,

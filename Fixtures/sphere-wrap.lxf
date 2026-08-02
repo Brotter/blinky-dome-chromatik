@@ -2,6 +2,10 @@
   "label": "Sphere Wrap",
   "tag": "sphere",
 
+  "meta": {
+    "maxChunks": 12
+  },
+
   "parameters": {
     "radius": {
       "type": "float", "min": 1, "max": 5000, "default": 100,

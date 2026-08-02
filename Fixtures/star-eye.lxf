@@ -4,6 +4,9 @@
     "star-eye",
     "2d"
   ],
+  "meta": {
+    "maxChunks": 5
+  },
   "parameters": {        
     "ip": {
         "label": "String A Host",

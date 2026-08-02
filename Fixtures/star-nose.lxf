@@ -4,6 +4,9 @@
     "star-nose",
     "2d"
   ],
+  "meta": {
+    "maxChunks": 8
+  },
   "metadata": {
     "source_svg": "star-nose.svg",
     "num_points": 300,

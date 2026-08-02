@@ -5,6 +5,9 @@
     "geodesic",
     "V4"
   ],
+  "meta": {
+    "maxChunks": 20
+  },
   "metadata": {
     "dome_radius_m": 4.8768,
     "dome_radius_ft": 16,

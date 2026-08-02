@@ -2,6 +2,10 @@
   "label": "Arc Curtain",
   "tag": "arch",
 
+  "meta": {
+    "maxChunks": 40
+  },
+
   "parameters": {
     "radius": {
       "type": "float", "min": 0.1, "max": 1000, "default": 5,
